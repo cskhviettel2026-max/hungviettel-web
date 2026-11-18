@@ -1,0 +1,2830 @@
+{
+  "contact": {
+    "name": "Lê Ngọc Hùng",
+    "role": "Tư vấn giải pháp số",
+    "hotline": "0985 535 633",
+    "address": "2047 Nguyễn Ái Quốc, Phường Trấn Biên, Thành phố Đồng Nai",
+    "email": "",
+    "portrait": "/assets/hung.webp",
+    "ticker": ""
+  },
+  "media": {
+    "products": {
+      "tendoo": "/assets/tendoo.webp",
+      "ca": "/assets/ca.webp",
+      "contract": "/assets/contract.webp",
+      "invoice": "/assets/invoice.webp",
+      "bhxh": "/assets/bhxh.webp",
+      "ftth": "/assets/ftth.webp"
+    }
+  },
+  "visibility": {
+    "gallery": true,
+    "videos": true,
+    "faq": true
+  },
+  "gallery": [
+    {
+      "id": "slide-0",
+      "enabled": true,
+      "title": "Tendoo",
+      "subtitle": "Quản lý bán hàng",
+      "description": "Tập trung hoạt động bán hàng, hàng hóa và thông tin kinh doanh để theo dõi thuận tiện hơn.",
+      "details": [
+        "Theo dõi hoạt động bán hàng",
+        "Quản lý hàng hóa, tồn kho",
+        "Trao đổi phương án phù hợp với cửa hàng"
+      ],
+      "image": "/assets/tendoo.webp",
+      "service": "tendoo"
+    },
+    {
+      "id": "slide-1",
+      "enabled": true,
+      "title": "Chữ ký số",
+      "subtitle": "Viettel-CA",
+      "description": "Giải pháp ký số tài liệu và giao dịch điện tử theo nhu cầu của doanh nghiệp.",
+      "details": [
+        "Ký số hồ sơ, tài liệu điện tử",
+        "Tư vấn hình thức ký phù hợp",
+        "Hướng dẫn cài đặt và sử dụng"
+      ],
+      "image": "/assets/ca.webp",
+      "service": "ca"
+    },
+    {
+      "id": "slide-2",
+      "enabled": true,
+      "title": "Hợp đồng điện tử",
+      "subtitle": "vContract",
+      "description": "Hỗ trợ gửi, ký kết và quản lý hợp đồng trên môi trường điện tử.",
+      "details": [
+        "Ký kết trên môi trường điện tử",
+        "Kết nối công việc với đối tác",
+        "Quản lý và tra cứu hợp đồng"
+      ],
+      "image": "/assets/contract.webp",
+      "service": "contract"
+    },
+    {
+      "id": "slide-3",
+      "enabled": true,
+      "title": "Hóa đơn điện tử",
+      "subtitle": "S-invoice",
+      "description": "Hỗ trợ lập, gửi và quản lý hóa đơn điện tử trong quy trình kinh doanh.",
+      "details": [
+        "Lập và quản lý hóa đơn",
+        "Theo dõi thông tin hóa đơn",
+        "Hướng dẫn sử dụng theo nhu cầu"
+      ],
+      "image": "/assets/invoice.webp",
+      "service": "invoice"
+    },
+    {
+      "id": "slide-4",
+      "enabled": true,
+      "title": "Kê khai BHXH",
+      "subtitle": "vBHXH",
+      "description": "Hỗ trợ doanh nghiệp lập và quản lý hồ sơ bảo hiểm xã hội điện tử.",
+      "details": [
+        "Chuẩn bị và kê khai hồ sơ điện tử",
+        "Quản lý hồ sơ bảo hiểm xã hội",
+        "Hỗ trợ theo phiên bản đang sử dụng"
+      ],
+      "image": "/assets/bhxh.webp",
+      "service": "bhxh"
+    },
+    {
+      "id": "slide-5",
+      "enabled": true,
+      "title": "Internet doanh nghiệp Viettel",
+      "subtitle": "FTTH",
+      "description": "Internet cáp quang cho văn phòng và doanh nghiệp.",
+      "details": [
+        "Cáp quang hỗ trợ Wi-Fi 6",
+        "Tốc độ tải xuống và tải lên cao",
+        "Gói cước IP tĩnh và IP động"
+      ],
+      "image": "/assets/ftth.webp",
+      "service": "ftth"
+    }
+  ],
+  "faq": [
+    {
+      "id": "faq-0",
+      "enabled": true,
+      "q": "Tôi chưa biết chọn sản phẩm nào?",
+      "a": "Liên hệ anh Hùng hoặc chọn sản phẩm bạn đang quan tâm trong form. Anh Hùng sẽ trao đổi về mô hình kinh doanh trước khi đề xuất."
+    },
+    {
+      "id": "faq-1",
+      "enabled": true,
+      "q": "Đăng ký có phải đã mua hàng hay thanh toán?",
+      "a": "Đây là đăng ký nhận tư vấn. Giá, gói dịch vụ và thông tin thanh toán được trao đổi và xác nhận riêng."
+    },
+    {
+      "id": "faq-2",
+      "enabled": true,
+      "q": "Tôi nhận nhóm Tammi và lịch Zoom ở đâu?",
+      "a": "Email xác nhận gửi hướng dẫn vào nhóm khi có link. Email nhắc Zoom được gửi theo lịch buổi đã cấu hình; hãy kiểm tra cả Spam và Quảng cáo."
+    },
+    {
+      "id": "faq-3",
+      "enabled": true,
+      "q": "Tôi có thể xem thông tin sản phẩm gốc?",
+      "a": "Mỗi mục chi tiết có liên kết đến trang sản phẩm Viettel để anh/chị tham khảo trước khi đăng ký tư vấn."
+    }
+  ],
+  "blocks": [],
+  "videos": [
+    {
+      "id": "video-0",
+      "title": "Tendoo",
+      "enabled": true,
+      "service": "tendoo",
+      "link": "CXnZLTpXrwQ"
+    },
+    {
+      "id": "video-1",
+      "title": "Chữ ký số",
+      "enabled": true,
+      "service": "ca",
+      "link": "tA9WUQVG5J4"
+    },
+    {
+      "id": "video-2",
+      "title": "Hợp đồng điện tử",
+      "enabled": true,
+      "service": "contract",
+      "link": "5LFUiabgvwA"
+    },
+    {
+      "id": "video-3",
+      "title": "Hóa đơn điện tử",
+      "enabled": true,
+      "service": "invoice",
+      "link": "T6Z3bO50PJo"
+    },
+    {
+      "id": "video-4",
+      "title": "Kê khai BHXH",
+      "enabled": true,
+      "service": "bhxh",
+      "link": "https://media.vietteltelecom.vn/upload/video_cskh/ae/5f/fa/56cd326358f849917fb70d33e8339021c263ded1.mp4"
+    },
+    {
+      "id": "video-5",
+      "title": "Internet doanh nghiệp Viettel",
+      "enabled": true,
+      "service": "ftth",
+      "link": "LaR3XWWmDYg"
+    }
+  ],
+  "pageContent": {
+    "index": {
+      "header": {
+        "text-1": "Viettel",
+        "text-2": "Theo cách của bạn",
+        "text-3": "Giải pháp",
+        "text-4": "Cách lựa chọn",
+        "text-5": "Khám phá"
+      },
+      "intro": {
+        "text-1": "Dành cho hộ kinh doanh & doanh nghiệp",
+        "text-2": "Giải pháp chuyển đổi số toàn diện cho doanh nghiệp và hộ kinh doanh",
+        "text-3": "Từ bán hàng đến ký kết và quản lý hồ sơ. Khám phá bộ giải pháp Viettel, chọn đúng điều bạn cần và được hướng dẫn từng bước.",
+        "text-4": "Tìm giải pháp của bạn ↗",
+        "text-5": "Tôi cần được tư vấn",
+        "text-6": "06 nhóm giải pháp · Một điểm kết nối tư vấn · Hỗ trợ 0985 535 633",
+        "text-7": "Lê Ngọc Hùng, Viettel Đồng Nai"
+      },
+      "general": {
+        "text-1": "PHẦN MỀM BÁN HÀNG ✦ CHỮ KÝ SỐ VIETTEL-CA ✦ HỢP ĐỒNG ĐIỆN TỬ ✦ HÓA ĐƠN ĐIỆN TỬ ✦ KÊ KHAI BHXH ✦ KẾT NỐI 0985 535 633 ✦ PHẦN MỀM BÁN HÀNG ✦ CHỮ KÝ SỐ VIETTEL-CA ✦ HỢP ĐỒNG ĐIỆN TỬ ✦ HÓA ĐƠN ĐIỆN TỬ ✦ KÊ KHAI BHXH ✦ KẾT NỐI 0985 535 633 ✦",
+        "text-2": "GỌI TƯ VẤN"
+      },
+      "solutions": {
+        "text-1": "Chọn điều doanh nghiệp cần",
+        "text-2": "Hệ sinh thái chuyển đổi số cho Doanh nghiệp, Hộ kinh doanh",
+        "text-3": "Không cần bắt đầu với tất cả. Chọn nhu cầu ưu tiên, anh Hùng cùng bạn tìm giải pháp phù hợp.",
+        "text-4": "Ảnh minh họa cho các giải pháp. Thông tin gói dịch vụ và chi phí được xác nhận khi tư vấn."
+      },
+      "resources": {
+        "text-1": "Góc khám phá",
+        "text-2": "Video giới thiệu các giải pháp",
+        "text-3": "Chọn từng giải pháp để xem video giới thiệu hoặc hướng dẫn sử dụng phù hợp.",
+        "text-4": "Mở video gốc ↗"
+      },
+      "register": {
+        "text-1": "Kết nối hôm nay, mở lối phát triển",
+        "text-2": "Giải pháp đúng nhu cầu",
+        "text-3": "Đồng hành cùng thành công",
+        "text-4": "Chia sẻ nhu cầu để được tư vấn giải pháp Viettel phù hợp và hướng dẫn triển khai cụ thể. Thông tin gói dịch vụ và chi phí được trao đổi rõ ràng trước khi bạn quyết định sử dụng.",
+        "text-5": "Kết nối để được tư vấn",
+        "text-6": "Lê Ngọc Hùng",
+        "text-7": "Viettel Đồng Nai",
+        "text-8": "2047 Nguyễn Ái Quốc, Phường Trấn Biên, Thành Phố Đồng Nai",
+        "text-9": "Kết nối Tammi theo số điện thoại trên.",
+        "text-10": "Nhận tư vấn giải pháp",
+        "text-11": "Họ và tên *",
+        "text-12": "Nguyễn Văn An",
+        "text-13": "Số điện thoại *",
+        "text-14": "09xx xxx xxx",
+        "text-15": "Email nhận hướng dẫn *",
+        "text-16": "ban@email.com",
+        "text-17": "Đơn vị / cửa hàng",
+        "text-18": "Tên đơn vị của bạn (không bắt buộc)",
+        "text-19": "Bạn quan tâm giải pháp nào? *",
+        "text-20": "Tôi đồng ý để Lê Ngọc Hùng sử dụng thông tin trên để tư vấn, gửi email xác nhận và nhắc lịch đã đăng ký. Tôi có thể yêu cầu dừng nhận bất cứ lúc nào qua số 0985 535 633.",
+        "text-21": "Gửi đăng ký tư vấn ↗",
+        "text-22": "Thông tin chỉ được gửi khi bạn bấm đăng ký.",
+        "text-23": "Đăng ký tư vấn không đồng nghĩa với mua hàng hoặc xác nhận thanh toán. Báo giá và thanh toán được trao đổi riêng."
+      },
+      "faq": {
+        "text-1": "Bạn có thể đang thắc mắc",
+        "text-2": "Rõ thông tin. An tâm bắt đầu."
+      },
+      "footer": {
+        "text-1": "VIETTEL ĐỒNG NAI",
+        "text-2": "· Tư vấn giải pháp số",
+        "text-3": "Lê Ngọc Hùng",
+        "text-4": "Điện thoại:",
+        "text-5": "Địa chỉ: 2047 Nguyễn Ái Quốc, Phường Trấn Biên, Thành phố Đồng Nai"
+      },
+      "done": {
+        "text-1": "Chúc mừng bạn đã đăng ký!",
+        "text-2": "Bộ giải pháp gồm Tendoo, chữ ký số, hợp đồng điện tử, hóa đơn điện tử và kê khai BHXH. Anh Hùng sẽ hướng dẫn theo nhu cầu bạn đã chọn.",
+        "text-3": "Hãy mở email, kiểm tra cả mục Spam/Quảng cáo để xem hướng dẫn vào nhóm Tammi. Lịch Zoom sẽ được gửi khi có lịch cụ thể.",
+        "text-4": "Đã hiểu"
+      },
+      "productModal": {
+        "text-1": "Lê Ngọc Hùng · 0985 535 633",
+        "text-2": "Gói dịch vụ, giá và ưu đãi được xác nhận khi tư vấn.",
+        "text-3": "Đăng ký tư vấn ↗",
+        "text-4": "Website sản phẩm ↗"
+      }
+    },
+    "san-pham-tendoo": {
+      "header": {
+        "text-1": "Viettel Đồng Nai",
+        "text-2": "Tư vấn · 0985 535 633"
+      },
+      "general": {
+        "text-1": "← Tất cả giải pháp"
+      },
+      "layout": {
+        "text-1": "Quản lý bán hàng",
+        "text-2": "Tendoo",
+        "text-3": "Tập trung hoạt động bán hàng, hàng hóa và thông tin kinh doanh để theo dõi thuận tiện hơn.",
+        "text-4": "Theo dõi hoạt động bán hàng",
+        "text-5": "Quản lý hàng hóa, tồn kho",
+        "text-6": "Trao đổi phương án phù hợp với cửa hàng",
+        "text-7": "Lê Ngọc Hùng · Viettel Đồng Nai",
+        "text-8": "Liên hệ để được tư vấn gói dịch vụ, chi phí và cách triển khai.",
+        "text-9": "Liên hệ Hùng",
+        "text-10": "Đăng ký tư vấn"
+      },
+      "pricing": {
+        "text-1": "Bảng giá tham khảo",
+        "text-2": "Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí áp dụng.",
+        "text-3": "Gói Tendoo (10)",
+        "text-4": "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền (9)"
+      },
+      "footer": {
+        "text-1": "Tham khảo website chính thức của Viettel"
+      }
+    },
+    "san-pham-ca": {
+      "header": {
+        "text-1": "Viettel Đồng Nai",
+        "text-2": "Tư vấn · 0985 535 633"
+      },
+      "general": {
+        "text-1": "← Tất cả giải pháp"
+      },
+      "layout": {
+        "text-1": "Viettel-CA",
+        "text-2": "Chữ ký số",
+        "text-3": "Giải pháp ký số tài liệu và giao dịch điện tử theo nhu cầu của doanh nghiệp.",
+        "text-4": "Ký số hồ sơ, tài liệu điện tử",
+        "text-5": "Tư vấn hình thức ký phù hợp",
+        "text-6": "Hướng dẫn cài đặt và sử dụng",
+        "text-7": "Lê Ngọc Hùng · Viettel Đồng Nai",
+        "text-8": "Liên hệ để được tư vấn gói dịch vụ, chi phí và cách triển khai.",
+        "text-9": "Liên hệ Hùng",
+        "text-10": "Đăng ký tư vấn"
+      },
+      "pricing": {
+        "text-1": "Bảng giá tham khảo",
+        "text-2": "Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí áp dụng.",
+        "text-3": "Cấp mới USB Token cho tổ chức (3)",
+        "text-4": "Gia hạn chữ ký số cho tổ chức (3)"
+      },
+      "footer": {
+        "text-1": "Tham khảo website chính thức của Viettel"
+      }
+    },
+    "san-pham-contract": {
+      "header": {
+        "text-1": "Viettel Đồng Nai",
+        "text-2": "Tư vấn · 0985 535 633"
+      },
+      "general": {
+        "text-1": "← Tất cả giải pháp"
+      },
+      "layout": {
+        "text-1": "vContract",
+        "text-2": "Hợp đồng điện tử",
+        "text-3": "Hỗ trợ gửi, ký kết và quản lý hợp đồng trên môi trường điện tử.",
+        "text-4": "Ký kết trên môi trường điện tử",
+        "text-5": "Kết nối công việc với đối tác",
+        "text-6": "Quản lý và tra cứu hợp đồng",
+        "text-7": "Lê Ngọc Hùng · Viettel Đồng Nai",
+        "text-8": "Liên hệ để được tư vấn gói dịch vụ, chi phí và cách triển khai.",
+        "text-9": "Liên hệ Hùng",
+        "text-10": "Đăng ký tư vấn"
+      },
+      "pricing": {
+        "text-1": "Bảng giá tham khảo",
+        "text-2": "Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí áp dụng.",
+        "text-3": "Phí khởi tạo gói chứng thực: 1.000.000 ₫. Gói thử: 0 ₫ phí khởi tạo. SMS Brandname nội mạng: 150 ₫/SMS. eKYC từ 1.000 ₫/SMS.",
+        "text-4": "Hợp đồng kèm chứng thực (6)",
+        "text-5": "Dùng thử (1)"
+      },
+      "footer": {
+        "text-1": "Tham khảo website chính thức của Viettel"
+      }
+    },
+    "san-pham-invoice": {
+      "header": {
+        "text-1": "Viettel Đồng Nai",
+        "text-2": "Tư vấn · 0985 535 633"
+      },
+      "general": {
+        "text-1": "← Tất cả giải pháp"
+      },
+      "layout": {
+        "text-1": "S-invoice",
+        "text-2": "Hóa đơn điện tử",
+        "text-3": "Hỗ trợ lập, gửi và quản lý hóa đơn điện tử trong quy trình kinh doanh.",
+        "text-4": "Lập và quản lý hóa đơn",
+        "text-5": "Theo dõi thông tin hóa đơn",
+        "text-6": "Hướng dẫn sử dụng theo nhu cầu",
+        "text-7": "Lê Ngọc Hùng · Viettel Đồng Nai",
+        "text-8": "Liên hệ để được tư vấn gói dịch vụ, chi phí và cách triển khai.",
+        "text-9": "Liên hệ Hùng",
+        "text-10": "Đăng ký tư vấn"
+      },
+      "pricing": {
+        "text-1": "Bảng giá tham khảo",
+        "text-2": "Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí áp dụng.",
+        "text-3": "Hóa đơn đơn lẻ (6)",
+        "text-4": "Combo cấp mới CA (15)",
+        "text-5": "Combo gia hạn CA (15)"
+      },
+      "footer": {
+        "text-1": "Tham khảo website chính thức của Viettel"
+      }
+    },
+    "san-pham-bhxh": {
+      "header": {
+        "text-1": "Viettel Đồng Nai",
+        "text-2": "Tư vấn · 0985 535 633"
+      },
+      "general": {
+        "text-1": "← Tất cả giải pháp"
+      },
+      "layout": {
+        "text-1": "vBHXH",
+        "text-2": "Kê khai BHXH",
+        "text-3": "Hỗ trợ doanh nghiệp lập và quản lý hồ sơ bảo hiểm xã hội điện tử.",
+        "text-4": "Chuẩn bị và kê khai hồ sơ điện tử",
+        "text-5": "Quản lý hồ sơ bảo hiểm xã hội",
+        "text-6": "Hỗ trợ theo phiên bản đang sử dụng",
+        "text-7": "Lê Ngọc Hùng · Viettel Đồng Nai",
+        "text-8": "Liên hệ để được tư vấn gói dịch vụ, chi phí và cách triển khai.",
+        "text-9": "Liên hệ Hùng",
+        "text-10": "Đăng ký tư vấn"
+      },
+      "pricing": {
+        "text-1": "Bảng giá tham khảo",
+        "text-2": "Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí áp dụng.",
+        "text-3": "Cấp mới (24)",
+        "text-4": "Gia hạn (24)",
+        "text-5": "Dùng thử (1)",
+        "text-6": "Combo cấp mới CA + vBHXH (12)",
+        "text-7": "Combo gia hạn CA + vBHXH (12)"
+      },
+      "footer": {
+        "text-1": "Tham khảo website chính thức của Viettel"
+      }
+    },
+    "san-pham-ftth": {
+      "general": {
+        "text-1": "← Tất cả giải pháp"
+      },
+      "layout": {
+        "text-1": "FTTH",
+        "text-2": "Internet doanh nghiệp Viettel",
+        "text-3": "Internet cáp quang FTTH cho văn phòng và doanh nghiệp.",
+        "text-4": "Cáp quang hỗ trợ Wi-Fi 6",
+        "text-5": "Tốc độ tải xuống và tải lên cao, hỗ trợ kết nối ổn định",
+        "text-6": "Phù hợp với doanh nghiệp vừa và lớn",
+        "text-7": "Lê Ngọc Hùng · Viettel Đồng Nai",
+        "text-8": "Liên hệ Hùng",
+        "text-9": "Đăng ký tư vấn"
+      },
+      "pricing": {
+        "text-1": "Bảng giá tham khảo",
+        "text-2": "Giá đã bao gồm VAT. Liên hệ để xác nhận cước theo địa chỉ lắp đặt."
+      }
+    }
+  },
+  "serviceCatalog": [
+    {
+      "id": "tendoo",
+      "enabled": true,
+      "name": "Tendoo",
+      "slug": "tendoo",
+      "category": "Quản lý bán hàng",
+      "description": "Tập trung hoạt động bán hàng, hàng hóa và thông tin kinh doanh để theo dõi thuận tiện hơn.",
+      "points": [
+        "Theo dõi hoạt động bán hàng",
+        "Quản lý hàng hóa, tồn kho",
+        "Trao đổi phương án phù hợp với cửa hàng"
+      ],
+      "official": "https://sme.viettel.vn/landing-page?alias=TDO",
+      "image": "/assets/tendoo.webp",
+      "detailTitle": "Tendoo",
+      "detailIntro": "Tập trung hoạt động bán hàng, hàng hóa và thông tin kinh doanh để theo dõi thuận tiện hơn.",
+      "detailContent": ""
+    },
+    {
+      "id": "ca",
+      "enabled": true,
+      "name": "Chữ ký số",
+      "slug": "ca",
+      "category": "Viettel-CA",
+      "description": "Giải pháp ký số tài liệu và giao dịch điện tử theo nhu cầu của doanh nghiệp.",
+      "points": [
+        "Ký số hồ sơ, tài liệu điện tử",
+        "Tư vấn hình thức ký phù hợp",
+        "Hướng dẫn cài đặt và sử dụng"
+      ],
+      "official": "https://viettel.vn/viettel-ca",
+      "image": "/assets/ca.webp",
+      "detailTitle": "Chữ ký số",
+      "detailIntro": "Giải pháp ký số tài liệu và giao dịch điện tử theo nhu cầu của doanh nghiệp.",
+      "detailContent": ""
+    },
+    {
+      "id": "contract",
+      "enabled": true,
+      "name": "Hợp đồng điện tử",
+      "slug": "contract",
+      "category": "vContract",
+      "description": "Hỗ trợ gửi, ký kết và quản lý hợp đồng trên môi trường điện tử.",
+      "points": [
+        "Ký kết trên môi trường điện tử",
+        "Kết nối công việc với đối tác",
+        "Quản lý và tra cứu hợp đồng"
+      ],
+      "official": "https://viettel.vn/v-contract",
+      "image": "/assets/contract.webp",
+      "detailTitle": "Hợp đồng điện tử",
+      "detailIntro": "Hỗ trợ gửi, ký kết và quản lý hợp đồng trên môi trường điện tử.",
+      "detailContent": ""
+    },
+    {
+      "id": "invoice",
+      "enabled": true,
+      "name": "Hóa đơn điện tử",
+      "slug": "invoice",
+      "category": "S-invoice",
+      "description": "Hỗ trợ lập, gửi và quản lý hóa đơn điện tử trong quy trình kinh doanh.",
+      "points": [
+        "Lập và quản lý hóa đơn",
+        "Theo dõi thông tin hóa đơn",
+        "Hướng dẫn sử dụng theo nhu cầu"
+      ],
+      "official": "https://viettel.vn/s-invoice",
+      "image": "/assets/invoice.webp",
+      "detailTitle": "Hóa đơn điện tử",
+      "detailIntro": "Hỗ trợ lập, gửi và quản lý hóa đơn điện tử trong quy trình kinh doanh.",
+      "detailContent": ""
+    },
+    {
+      "id": "bhxh",
+      "enabled": true,
+      "name": "Kê khai BHXH",
+      "slug": "bhxh",
+      "category": "vBHXH",
+      "description": "Hỗ trợ doanh nghiệp lập và quản lý hồ sơ bảo hiểm xã hội điện tử.",
+      "points": [
+        "Chuẩn bị và kê khai hồ sơ điện tử",
+        "Quản lý hồ sơ bảo hiểm xã hội",
+        "Hỗ trợ theo phiên bản đang sử dụng"
+      ],
+      "official": "https://viettel.vn/vbhxh",
+      "image": "/assets/bhxh.webp",
+      "detailTitle": "Kê khai BHXH",
+      "detailIntro": "Hỗ trợ doanh nghiệp lập và quản lý hồ sơ bảo hiểm xã hội điện tử.",
+      "detailContent": ""
+    },
+    {
+      "id": "ftth",
+      "enabled": true,
+      "name": "Internet doanh nghiệp Viettel",
+      "slug": "ftth",
+      "category": "FTTH",
+      "description": "Internet cáp quang FTTH cho văn phòng và doanh nghiệp.",
+      "points": [
+        "Cáp quang hỗ trợ Wi-Fi 6",
+        "Tốc độ tải xuống và tải lên cao, hỗ trợ kết nối ổn định",
+        "Phù hợp với doanh nghiệp vừa và lớn"
+      ],
+      "official": "",
+      "image": "/assets/ftth.webp",
+      "detailTitle": "Internet doanh nghiệp Viettel",
+      "detailIntro": "Internet cáp quang FTTH cho văn phòng và doanh nghiệp.",
+      "detailContent": ""
+    }
+  ],
+  "prices": {
+    "tendoo": [
+      {
+        "id": "tendoo-1",
+        "enabled": true,
+        "name": "Quản lý bán hàng · 3 năm + 9 tháng",
+        "group": "0",
+        "price": 5248800,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-2",
+        "enabled": true,
+        "name": "Quản lý bán hàng · 3 năm",
+        "group": "0",
+        "price": 5248800,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-3",
+        "enabled": true,
+        "name": "Quản lý bán hàng · 2 năm + 6 tháng",
+        "group": "0",
+        "price": 3693600,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-4",
+        "enabled": true,
+        "name": "Quản lý bán hàng · 2 năm",
+        "group": "0",
+        "price": 3693600,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-5",
+        "enabled": true,
+        "name": "Combo ND70 · 3 năm",
+        "group": "0",
+        "price": 1963000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-6",
+        "enabled": true,
+        "name": "Quản lý bán hàng · 1 năm + 3 tháng",
+        "group": "0",
+        "price": 1944000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-7",
+        "enabled": true,
+        "name": "Quản lý bán hàng · 1 năm",
+        "group": "0",
+        "price": 1944000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-8",
+        "enabled": true,
+        "name": "Combo ND70 · 2 năm",
+        "group": "0",
+        "price": 1423000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-9",
+        "enabled": true,
+        "name": "Combo ND70 · 1 năm",
+        "group": "0",
+        "price": 785000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-10",
+        "enabled": true,
+        "name": "Miễn phí · 1 tháng",
+        "group": "0",
+        "price": 0,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gói Tendoo"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "tendoo-11",
+        "enabled": true,
+        "name": "POS để bàn 2 màn hình",
+        "group": "1",
+        "price": 8200000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "tendoo-12",
+        "enabled": true,
+        "name": "POS để bàn 1 màn hình",
+        "group": "1",
+        "price": 6700000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "tendoo-13",
+        "enabled": true,
+        "name": "POS cầm tay",
+        "group": "1",
+        "price": 4200000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "tendoo-14",
+        "enabled": true,
+        "name": "Máy in tem nhãn và vận đơn",
+        "group": "1",
+        "price": 1500000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "tendoo-15",
+        "enabled": true,
+        "name": "Máy in hóa đơn USB và LAN, khổ 80 mm",
+        "group": "1",
+        "price": 1200000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "tendoo-16",
+        "enabled": true,
+        "name": "Máy quét mã vạch cố định",
+        "group": "1",
+        "price": 1000000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "tendoo-17",
+        "enabled": true,
+        "name": "Máy quét mã vạch cầm tay",
+        "group": "1",
+        "price": 900000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "tendoo-18",
+        "enabled": true,
+        "name": "Loa TD_LOA",
+        "group": "1",
+        "price": 460000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "tendoo-19",
+        "enabled": true,
+        "name": "Máy báo thanh toán QR tĩnh",
+        "group": "1",
+        "price": 300000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      }
+    ],
+    "ca": [
+      {
+        "id": "ca-1",
+        "enabled": true,
+        "name": "CA1 · 12 tháng · kèm USB Token",
+        "group": "0",
+        "price": 1792000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới USB Token cho tổ chức"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "ca-2",
+        "enabled": true,
+        "name": "CA2 · 24 tháng · kèm USB Token",
+        "group": "0",
+        "price": 2691000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới USB Token cho tổ chức"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "ca-3",
+        "enabled": true,
+        "name": "CA3 · 36 tháng · kèm USB Token",
+        "group": "0",
+        "price": 3052000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới USB Token cho tổ chức"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "ca-4",
+        "enabled": true,
+        "name": "CA1_GH · 12 tháng",
+        "group": "1",
+        "price": 1252000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn chữ ký số cho tổ chức"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "ca-5",
+        "enabled": true,
+        "name": "CA2_GH · 24 tháng",
+        "group": "1",
+        "price": 2151000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn chữ ký số cho tổ chức"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "ca-6",
+        "enabled": true,
+        "name": "CA3_GH · 36 tháng",
+        "group": "1",
+        "price": 2856000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn chữ ký số cho tổ chức"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      }
+    ],
+    "contract": [
+      {
+        "id": "contract-1",
+        "enabled": true,
+        "name": "VCONT_100 · 100 hợp đồng",
+        "group": "0",
+        "price": 1913000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hợp đồng kèm chứng thực"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "contract-2",
+        "enabled": true,
+        "name": "VCONT_500 · 500 hợp đồng",
+        "group": "0",
+        "price": 5345000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hợp đồng kèm chứng thực"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "contract-3",
+        "enabled": true,
+        "name": "VCONT_1000 · 1.000 hợp đồng",
+        "group": "0",
+        "price": 9250000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hợp đồng kèm chứng thực"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "contract-4",
+        "enabled": true,
+        "name": "VCONT_5000 · 5.000 hợp đồng",
+        "group": "0",
+        "price": 38400000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hợp đồng kèm chứng thực"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "contract-5",
+        "enabled": true,
+        "name": "VCONT_10K · 10.000 hợp đồng",
+        "group": "0",
+        "price": 73600000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hợp đồng kèm chứng thực"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "contract-6",
+        "enabled": true,
+        "name": "VCONT_100K · 100.000 hợp đồng",
+        "group": "0",
+        "price": 705000000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hợp đồng kèm chứng thực"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "contract-7",
+        "enabled": true,
+        "name": "vCont20 · 20 hợp đồng trong 30 ngày",
+        "group": "1",
+        "price": 0,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Dùng thử"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      }
+    ],
+    "invoice": [
+      {
+        "id": "invoice-1",
+        "enabled": true,
+        "name": "HD_300_TT78 · 300 hóa đơn",
+        "group": "0",
+        "price": 421000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hóa đơn đơn lẻ"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "invoice-2",
+        "enabled": true,
+        "name": "HD_500_TT78 · 500 hóa đơn",
+        "group": "0",
+        "price": 572000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hóa đơn đơn lẻ"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "invoice-3",
+        "enabled": true,
+        "name": "HD_1K_TT78 · 1.000 hóa đơn",
+        "group": "0",
+        "price": 896000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hóa đơn đơn lẻ"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "invoice-4",
+        "enabled": true,
+        "name": "HD_2K_TT78 · 2.000 hóa đơn",
+        "group": "0",
+        "price": 1350000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hóa đơn đơn lẻ"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "invoice-5",
+        "enabled": true,
+        "name": "HD_5K_TT78 · 5.000 hóa đơn",
+        "group": "0",
+        "price": 2883000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hóa đơn đơn lẻ"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "invoice-6",
+        "enabled": true,
+        "name": "HD_10K_TT78 · 10.000 hóa đơn",
+        "group": "0",
+        "price": 4773000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Hóa đơn đơn lẻ"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "invoice-7",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 300 hóa đơn · 12 tháng",
+        "group": "1",
+        "price": 2079000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-8",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 500 hóa đơn · 12 tháng",
+        "group": "1",
+        "price": 2222000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-9",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 1.000 hóa đơn · 12 tháng",
+        "group": "1",
+        "price": 2519000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-10",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 2.000 hóa đơn · 12 tháng",
+        "group": "1",
+        "price": 2937000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-11",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 3.000 hóa đơn · 12 tháng",
+        "group": "1",
+        "price": 3432000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-12",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 300 hóa đơn · 24 tháng",
+        "group": "1",
+        "price": 2904000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-13",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 500 hóa đơn · 24 tháng",
+        "group": "1",
+        "price": 3047000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-14",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 1.000 hóa đơn · 24 tháng",
+        "group": "1",
+        "price": 3344000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-15",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 2.000 hóa đơn · 24 tháng",
+        "group": "1",
+        "price": 3762000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-16",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 3.000 hóa đơn · 24 tháng",
+        "group": "1",
+        "price": 4257000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-17",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 300 hóa đơn · 36 tháng",
+        "group": "1",
+        "price": 3179000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-18",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 500 hóa đơn · 36 tháng",
+        "group": "1",
+        "price": 3322000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-19",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 1.000 hóa đơn · 36 tháng",
+        "group": "1",
+        "price": 3619000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-20",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 2.000 hóa đơn · 36 tháng",
+        "group": "1",
+        "price": 4037000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-21",
+        "enabled": true,
+        "name": "Combo cấp mới CA · 3.000 hóa đơn · 36 tháng",
+        "group": "1",
+        "price": 4532000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "invoice-22",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 300 hóa đơn · 12 tháng",
+        "group": "2",
+        "price": 1529000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-23",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 500 hóa đơn · 12 tháng",
+        "group": "2",
+        "price": 1672000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-24",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 1.000 hóa đơn · 12 tháng",
+        "group": "2",
+        "price": 1969000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-25",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 2.000 hóa đơn · 12 tháng",
+        "group": "2",
+        "price": 2387000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-26",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 3.000 hóa đơn · 12 tháng",
+        "group": "2",
+        "price": 2882000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-27",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 300 hóa đơn · 24 tháng",
+        "group": "2",
+        "price": 2354000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-28",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 500 hóa đơn · 24 tháng",
+        "group": "2",
+        "price": 2497000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-29",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 1.000 hóa đơn · 24 tháng",
+        "group": "2",
+        "price": 2794000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-30",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 2.000 hóa đơn · 24 tháng",
+        "group": "2",
+        "price": 3212000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-31",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 3.000 hóa đơn · 24 tháng",
+        "group": "2",
+        "price": 3707000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-32",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 300 hóa đơn · 36 tháng",
+        "group": "2",
+        "price": 3003000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-33",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 500 hóa đơn · 36 tháng",
+        "group": "2",
+        "price": 3146000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-34",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 1.000 hóa đơn · 36 tháng",
+        "group": "2",
+        "price": 3443000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-35",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 2.000 hóa đơn · 36 tháng",
+        "group": "2",
+        "price": 3861000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "invoice-36",
+        "enabled": true,
+        "name": "Combo gia hạn CA · 3.000 hóa đơn · 36 tháng",
+        "group": "2",
+        "price": 4356000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      }
+    ],
+    "bhxh": [
+      {
+        "id": "bhxh-1",
+        "enabled": true,
+        "name": "Đăng ký · 10 lao động · 18 tháng",
+        "group": "0",
+        "price": 196000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-2",
+        "enabled": true,
+        "name": "Đăng ký · 10 lao động · 33 tháng",
+        "group": "0",
+        "price": 274000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-3",
+        "enabled": true,
+        "name": "Đăng ký · 10 lao động · 48 tháng",
+        "group": "0",
+        "price": 333000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-4",
+        "enabled": true,
+        "name": "Cấp mới · 10 lao động · 18 tháng",
+        "group": "0",
+        "price": 216000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-5",
+        "enabled": true,
+        "name": "Cấp mới · 10 lao động · 33 tháng",
+        "group": "0",
+        "price": 345000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-6",
+        "enabled": true,
+        "name": "Cấp mới · 10 lao động · 48 tháng",
+        "group": "0",
+        "price": 410000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-7",
+        "enabled": true,
+        "name": "Đăng ký · 100 lao động · 18 tháng",
+        "group": "0",
+        "price": 455000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-8",
+        "enabled": true,
+        "name": "Đăng ký · 100 lao động · 33 tháng",
+        "group": "0",
+        "price": 780000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-9",
+        "enabled": true,
+        "name": "Đăng ký · 100 lao động · 48 tháng",
+        "group": "0",
+        "price": 814000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-10",
+        "enabled": true,
+        "name": "Cấp mới · 100 lao động · 18 tháng",
+        "group": "0",
+        "price": 540000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-11",
+        "enabled": true,
+        "name": "Cấp mới · 100 lao động · 33 tháng",
+        "group": "0",
+        "price": 864000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-12",
+        "enabled": true,
+        "name": "Cấp mới · 100 lao động · 48 tháng",
+        "group": "0",
+        "price": 1026000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-13",
+        "enabled": true,
+        "name": "Đăng ký · 1.000 lao động · 18 tháng",
+        "group": "0",
+        "price": 756000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-14",
+        "enabled": true,
+        "name": "Đăng ký · 1.000 lao động · 33 tháng",
+        "group": "0",
+        "price": 1234000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-15",
+        "enabled": true,
+        "name": "Đăng ký · 1.000 lao động · 48 tháng",
+        "group": "0",
+        "price": 1392000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-16",
+        "enabled": true,
+        "name": "Cấp mới · 1.000 lao động · 18 tháng",
+        "group": "0",
+        "price": 864000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-17",
+        "enabled": true,
+        "name": "Cấp mới · 1.000 lao động · 33 tháng",
+        "group": "0",
+        "price": 1382000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-18",
+        "enabled": true,
+        "name": "Cấp mới · 1.000 lao động · 48 tháng",
+        "group": "0",
+        "price": 1641000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-19",
+        "enabled": true,
+        "name": "Đăng ký · Không giới hạn lao động · 18 tháng",
+        "group": "0",
+        "price": 1060000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-20",
+        "enabled": true,
+        "name": "Đăng ký · Không giới hạn lao động · 33 tháng",
+        "group": "0",
+        "price": 1718000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-21",
+        "enabled": true,
+        "name": "Đăng ký · Không giới hạn lao động · 48 tháng",
+        "group": "0",
+        "price": 1975000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-22",
+        "enabled": true,
+        "name": "Cấp mới · Không giới hạn lao động · 18 tháng",
+        "group": "0",
+        "price": 1188000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-23",
+        "enabled": true,
+        "name": "Cấp mới · Không giới hạn lao động · 33 tháng",
+        "group": "0",
+        "price": 1900000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-24",
+        "enabled": true,
+        "name": "Cấp mới · Không giới hạn lao động · 48 tháng",
+        "group": "0",
+        "price": 2248000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Cấp mới"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 0
+      },
+      {
+        "id": "bhxh-25",
+        "enabled": true,
+        "name": "Gia hạn · 10 lao động · 18 tháng",
+        "group": "1",
+        "price": 196000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-26",
+        "enabled": true,
+        "name": "Gia hạn · 10 lao động · 33 tháng",
+        "group": "1",
+        "price": 274000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-27",
+        "enabled": true,
+        "name": "Gia hạn · 10 lao động · 48 tháng",
+        "group": "1",
+        "price": 333000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-28",
+        "enabled": true,
+        "name": "Gia hạn theo gói · 10 lao động · 18 tháng",
+        "group": "1",
+        "price": 216000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-29",
+        "enabled": true,
+        "name": "Gia hạn theo gói · 10 lao động · 33 tháng",
+        "group": "1",
+        "price": 345000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-30",
+        "enabled": true,
+        "name": "Gia hạn theo gói · 10 lao động · 48 tháng",
+        "group": "1",
+        "price": 410000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-31",
+        "enabled": true,
+        "name": "Gia hạn · 100 lao động · 18 tháng",
+        "group": "1",
+        "price": 455000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-32",
+        "enabled": true,
+        "name": "Gia hạn · 100 lao động · 33 tháng",
+        "group": "1",
+        "price": 780000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-33",
+        "enabled": true,
+        "name": "Gia hạn · 100 lao động · 48 tháng",
+        "group": "1",
+        "price": 814000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-34",
+        "enabled": true,
+        "name": "Gia hạn theo gói · 100 lao động · 18 tháng",
+        "group": "1",
+        "price": 540000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-35",
+        "enabled": true,
+        "name": "Gia hạn theo gói · 100 lao động · 33 tháng",
+        "group": "1",
+        "price": 864000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-36",
+        "enabled": true,
+        "name": "Gia hạn theo gói · 100 lao động · 48 tháng",
+        "group": "1",
+        "price": 1026000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-37",
+        "enabled": true,
+        "name": "Gia hạn · 1.000 lao động · 18 tháng",
+        "group": "1",
+        "price": 756000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-38",
+        "enabled": true,
+        "name": "Gia hạn · 1.000 lao động · 33 tháng",
+        "group": "1",
+        "price": 1234000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-39",
+        "enabled": true,
+        "name": "Gia hạn · 1.000 lao động · 48 tháng",
+        "group": "1",
+        "price": 1392000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-40",
+        "enabled": true,
+        "name": "Gia hạn theo gói · 1.000 lao động · 18 tháng",
+        "group": "1",
+        "price": 864000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-41",
+        "enabled": true,
+        "name": "Gia hạn theo gói · 1.000 lao động · 33 tháng",
+        "group": "1",
+        "price": 1382000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-42",
+        "enabled": true,
+        "name": "Gia hạn theo gói · 1.000 lao động · 48 tháng",
+        "group": "1",
+        "price": 1641000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-43",
+        "enabled": true,
+        "name": "Gia hạn · Không giới hạn lao động · 18 tháng",
+        "group": "1",
+        "price": 1060000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-44",
+        "enabled": true,
+        "name": "Gia hạn · Không giới hạn lao động · 33 tháng",
+        "group": "1",
+        "price": 1718000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-45",
+        "enabled": true,
+        "name": "Gia hạn · Không giới hạn lao động · 48 tháng",
+        "group": "1",
+        "price": 1975000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-46",
+        "enabled": true,
+        "name": "Gia hạn theo gói · Không giới hạn lao động · 18 tháng",
+        "group": "1",
+        "price": 1188000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-47",
+        "enabled": true,
+        "name": "Gia hạn theo gói · Không giới hạn lao động · 33 tháng",
+        "group": "1",
+        "price": 1900000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-48",
+        "enabled": true,
+        "name": "Gia hạn theo gói · Không giới hạn lao động · 48 tháng",
+        "group": "1",
+        "price": 2248000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Gia hạn"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 1
+      },
+      {
+        "id": "bhxh-49",
+        "enabled": true,
+        "name": "1 tháng · Không giới hạn lao động",
+        "group": "2",
+        "price": 0,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Dùng thử"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 2
+      },
+      {
+        "id": "bhxh-50",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · 10 lao động · 18 tháng",
+        "group": "3",
+        "price": 1870000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-51",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · 100 lao động · 18 tháng",
+        "group": "3",
+        "price": 2134000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-52",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · 1.000 lao động · 18 tháng",
+        "group": "3",
+        "price": 2440000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-53",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · Không giới hạn lao động · 18 tháng",
+        "group": "3",
+        "price": 2750000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-54",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · 10 lao động · 33 tháng",
+        "group": "3",
+        "price": 2730000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-55",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · 100 lao động · 33 tháng",
+        "group": "3",
+        "price": 3245000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-56",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · 1.000 lao động · 33 tháng",
+        "group": "3",
+        "price": 3707000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-57",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · Không giới hạn lao động · 33 tháng",
+        "group": "3",
+        "price": 4200000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-58",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · 10 lao động · 48 tháng",
+        "group": "3",
+        "price": 3080000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-59",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · 100 lao động · 48 tháng",
+        "group": "3",
+        "price": 3570000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-60",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · 1.000 lao động · 48 tháng",
+        "group": "3",
+        "price": 4158000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-61",
+        "enabled": true,
+        "name": "Combo cấp mới CA + vBHXH · Không giới hạn lao động · 48 tháng",
+        "group": "3",
+        "price": 4752000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo cấp mới CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 3
+      },
+      {
+        "id": "bhxh-62",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · 10 lao động · 18 tháng",
+        "group": "4",
+        "price": 1320000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-63",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · 100 lao động · 18 tháng",
+        "group": "4",
+        "price": 1584000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-64",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · 1.000 lao động · 18 tháng",
+        "group": "4",
+        "price": 1890000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-65",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · Không giới hạn lao động · 18 tháng",
+        "group": "4",
+        "price": 2200000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-66",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · 10 lao động · 33 tháng",
+        "group": "4",
+        "price": 2180000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-67",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · 100 lao động · 33 tháng",
+        "group": "4",
+        "price": 2695000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-68",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · 1.000 lao động · 33 tháng",
+        "group": "4",
+        "price": 3157000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-69",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · Không giới hạn lao động · 33 tháng",
+        "group": "4",
+        "price": 3650000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-70",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · 10 lao động · 48 tháng",
+        "group": "4",
+        "price": 2530000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-71",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · 100 lao động · 48 tháng",
+        "group": "4",
+        "price": 3020000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-72",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · 1.000 lao động · 48 tháng",
+        "group": "4",
+        "price": 3608000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      },
+      {
+        "id": "bhxh-73",
+        "enabled": true,
+        "name": "Combo gia hạn CA + vBHXH · Không giới hạn lao động · 48 tháng",
+        "group": "4",
+        "price": 4202000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Combo gia hạn CA + vBHXH"
+        ],
+        "tableName": "",
+        "tableDetail": "",
+        "tableIndex": 4
+      }
+    ],
+    "ftth": [
+      {
+        "id": "ftth-1",
+        "enabled": true,
+        "name": "F90N",
+        "group": "1",
+        "price": 440000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 120 Mbps",
+          "Quốc tế tối thiểu: 4 Mbps",
+          "IP động"
+        ],
+        "tableName": "",
+        "tableDetail": "120 / 4 Mbps\nIP động",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-2",
+        "enabled": true,
+        "name": "F300N",
+        "group": "1",
+        "price": 440000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 120 Mbps",
+          "Quốc tế tối thiểu: 4 Mbps",
+          "IP động"
+        ],
+        "tableName": "",
+        "tableDetail": "120 / 4 Mbps\nIP động",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-3",
+        "enabled": true,
+        "name": "F90N BASIC",
+        "group": "0",
+        "price": 660000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 120 Mbps",
+          "Quốc tế tối thiểu: 2 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "120 / 2 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-4",
+        "enabled": true,
+        "name": "F300N BASIC",
+        "group": "0",
+        "price": 660000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 120 Mbps",
+          "Quốc tế tối thiểu: 2 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "120 / 2 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-5",
+        "enabled": true,
+        "name": "VIP200",
+        "group": "0",
+        "price": 800000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 200 Mbps",
+          "Quốc tế tối thiểu: 5 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "200 / 5 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-6",
+        "enabled": true,
+        "name": "F90N PLUS",
+        "group": "0",
+        "price": 880000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 120 Mbps",
+          "Quốc tế tối thiểu: 6 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "120 / 6 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-7",
+        "enabled": true,
+        "name": "F200N",
+        "group": "0",
+        "price": 1100000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 200 Mbps",
+          "Quốc tế tối thiểu: 5 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "200 / 5 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-8",
+        "enabled": true,
+        "name": "VIP500",
+        "group": "0",
+        "price": 1900000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 500 Mbps",
+          "Quốc tế tối thiểu: 10 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "500 / 10 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-9",
+        "enabled": true,
+        "name": "F200N BASIC",
+        "group": "0",
+        "price": 1900000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 500 Mbps",
+          "Quốc tế tối thiểu: 10 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "500 / 10 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-10",
+        "enabled": true,
+        "name": "VIP600",
+        "group": "0",
+        "price": 6600000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 600 Mbps",
+          "Quốc tế tối thiểu: 30 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "600 / 30 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-11",
+        "enabled": true,
+        "name": "F200N PLUS",
+        "group": "0",
+        "price": 6600000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 600 Mbps",
+          "Quốc tế tối thiểu: 30 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "600 / 30 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-12",
+        "enabled": true,
+        "name": "F300N PLUS",
+        "group": "0",
+        "price": 9900000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 300 Mbps",
+          "Quốc tế tối thiểu: 30 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "300 / 30 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-13",
+        "enabled": true,
+        "name": "F500N BASIC",
+        "group": "0",
+        "price": 13200000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 500 Mbps",
+          "Quốc tế tối thiểu: 40 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "500 / 40 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-14",
+        "enabled": true,
+        "name": "F500N PLUS",
+        "group": "0",
+        "price": 17600000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 500 Mbps",
+          "Quốc tế tối thiểu: 50 Mbps",
+          "IP tĩnh"
+        ],
+        "tableName": "",
+        "tableDetail": "500 / 50 Mbps\nIP tĩnh",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-15",
+        "enabled": true,
+        "name": "PRO1",
+        "group": "1",
+        "price": 350000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 400 Mbps",
+          "Quốc tế tối thiểu: 2 Mbps",
+          "IP động · Không kèm Mesh Wi-Fi"
+        ],
+        "tableName": "",
+        "tableDetail": "400 / 2 Mbps\nIP động · Không kèm Mesh Wi-Fi",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-16",
+        "enabled": true,
+        "name": "MESHPRO1",
+        "group": "1",
+        "price": 440000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 400 Mbps",
+          "Quốc tế tối thiểu: 2 Mbps",
+          "IP động · 1 Mesh Wi-Fi"
+        ],
+        "tableName": "",
+        "tableDetail": "400 / 2 Mbps\nIP động · 1 Mesh Wi-Fi",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-17",
+        "enabled": true,
+        "name": "PRO2",
+        "group": "1",
+        "price": 500000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 500 Mbps",
+          "Quốc tế tối thiểu: 5 Mbps",
+          "IP động · Không kèm Mesh Wi-Fi"
+        ],
+        "tableName": "",
+        "tableDetail": "500 / 5 Mbps\nIP động · Không kèm Mesh Wi-Fi",
+        "tableIndex": 0
+      },
+      {
+        "id": "ftth-18",
+        "enabled": true,
+        "name": "MESHPRO2",
+        "group": "1",
+        "price": 600000,
+        "vatNote": "Đã bao gồm VAT",
+        "details": [
+          "Trong nước tối đa: 500 Mbps",
+          "Quốc tế tối thiểu: 5 Mbps",
+          "IP động · 2 Mesh Wi-Fi"
+        ],
+        "tableName": "",
+        "tableDetail": "500 / 5 Mbps\nIP động · 2 Mesh Wi-Fi",
+        "tableIndex": 0
+      }
+    ]
+  },
+  "customPlans": [],
+  "zoom": []
+}

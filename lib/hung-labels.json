@@ -1,0 +1,426 @@
+{
+  "pageLabels": {
+    "index": {
+      "title": "Trang chủ",
+      "sections": {
+        "header": {
+          "label": "Menu",
+          "fields": {
+            "text-1": "Mô tả ảnh · Viettel",
+            "text-2": "Nội dung · Theo cách của bạn",
+            "text-3": "Nhãn liên kết · Giải pháp",
+            "text-4": "Nhãn liên kết · Cách lựa chọn",
+            "text-5": "Nhãn liên kết · Khám phá"
+          }
+        },
+        "intro": {
+          "label": "Mở đầu",
+          "fields": {
+            "text-1": "Nội dung · Dành cho hộ kinh doanh & doanh nghiệp",
+            "text-2": "Tiêu đề · Giải pháp chuyển đổi số toàn diện cho doanh nghiệp và h",
+            "text-3": "Nội dung · Từ bán hàng đến ký kết và quản lý hồ sơ. Khám phá bộ gi",
+            "text-4": "Nhãn liên kết · Tìm giải pháp của bạn ↗",
+            "text-5": "Nhãn liên kết · Tôi cần được tư vấn",
+            "text-6": "Nội dung · 06 nhóm giải pháp · Một điểm kết nối tư vấn · Hỗ trợ 09",
+            "text-7": "Mô tả ảnh · Lê Ngọc Hùng, Viettel Đồng Nai"
+          }
+        },
+        "general": {
+          "label": "Thông tin chung",
+          "fields": {
+            "text-1": "Nội dung · PHẦN MỀM BÁN HÀNG ✦ CHỮ KÝ SỐ VIETTEL-CA ✦ HỢP ĐỒNG ĐIỆ",
+            "text-2": "Nội dung · GỌI TƯ VẤN"
+          }
+        },
+        "solutions": {
+          "label": "Danh sách giải pháp",
+          "fields": {
+            "text-1": "Nội dung · Chọn điều doanh nghiệp cần",
+            "text-2": "Tiêu đề · Hệ sinh thái chuyển đổi số cho Doanh nghiệp, Hộ kinh do",
+            "text-3": "Nội dung · Không cần bắt đầu với tất cả. Chọn nhu cầu ưu tiên, anh",
+            "text-4": "Nội dung · Ảnh minh họa cho các giải pháp. Thông tin gói dịch vụ v"
+          }
+        },
+        "resources": {
+          "label": "Góc khám phá",
+          "fields": {
+            "text-1": "Nội dung · Góc khám phá",
+            "text-2": "Tiêu đề · Video giới thiệu các giải pháp",
+            "text-3": "Nội dung · Chọn từng giải pháp để xem video giới thiệu hoặc hướng ",
+            "text-4": "Nhãn liên kết · Mở video gốc ↗"
+          }
+        },
+        "register": {
+          "label": "Form tư vấn",
+          "fields": {
+            "text-1": "Nội dung · Kết nối hôm nay, mở lối phát triển",
+            "text-2": "Tiêu đề · Giải pháp đúng nhu cầu",
+            "text-3": "Tiêu đề · Đồng hành cùng thành công",
+            "text-4": "Nội dung · Chia sẻ nhu cầu để được tư vấn giải pháp Viettel phù hợ",
+            "text-5": "Nội dung · Kết nối để được tư vấn",
+            "text-6": "Tiêu đề · Lê Ngọc Hùng",
+            "text-7": "Nội dung · Viettel Đồng Nai",
+            "text-8": "Nội dung · 2047 Nguyễn Ái Quốc, Phường Trấn Biên, Thành Phố Đồng N",
+            "text-9": "Nội dung · Kết nối Tammi theo số điện thoại trên.",
+            "text-10": "Tiêu đề · Nhận tư vấn giải pháp",
+            "text-11": "Nội dung · Họ và tên *",
+            "text-12": "Gợi ý nhập liệu · Nguyễn Văn An",
+            "text-13": "Nội dung · Số điện thoại *",
+            "text-14": "Gợi ý nhập liệu · 09xx xxx xxx",
+            "text-15": "Nội dung · Email nhận hướng dẫn *",
+            "text-16": "Gợi ý nhập liệu · ban@email.com",
+            "text-17": "Nội dung · Đơn vị / cửa hàng",
+            "text-18": "Gợi ý nhập liệu · Tên đơn vị của bạn (không bắt buộc)",
+            "text-19": "Nội dung · Bạn quan tâm giải pháp nào? *",
+            "text-20": "Nội dung · Tôi đồng ý để Lê Ngọc Hùng sử dụng thông tin trên để tư",
+            "text-21": "Nhãn liên kết · Gửi đăng ký tư vấn ↗",
+            "text-22": "Nội dung · Thông tin chỉ được gửi khi bạn bấm đăng ký.",
+            "text-23": "Nội dung · Đăng ký tư vấn không đồng nghĩa với mua hàng hoặc xác n"
+          }
+        },
+        "faq": {
+          "label": "Hỏi đáp",
+          "fields": {
+            "text-1": "Nội dung · Bạn có thể đang thắc mắc",
+            "text-2": "Tiêu đề · Rõ thông tin. An tâm bắt đầu."
+          }
+        },
+        "footer": {
+          "label": "Chân trang",
+          "fields": {
+            "text-1": "Tiêu đề · VIETTEL ĐỒNG NAI",
+            "text-2": "Nội dung · · Tư vấn giải pháp số",
+            "text-3": "Nội dung · Lê Ngọc Hùng",
+            "text-4": "Nội dung · Điện thoại:",
+            "text-5": "Nội dung · Địa chỉ: 2047 Nguyễn Ái Quốc, Phường Trấn Biên, Thành p"
+          }
+        },
+        "done": {
+          "label": "Xác nhận đăng ký",
+          "fields": {
+            "text-1": "Tiêu đề · Chúc mừng bạn đã đăng ký!",
+            "text-2": "Nội dung · Bộ giải pháp gồm Tendoo, chữ ký số, hợp đồng điện tử, h",
+            "text-3": "Nội dung · Hãy mở email, kiểm tra cả mục Spam/Quảng cáo để xem hướ",
+            "text-4": "Nhãn liên kết · Đã hiểu"
+          }
+        },
+        "productModal": {
+          "label": "Popup báo giá",
+          "fields": {
+            "text-1": "Nội dung · Lê Ngọc Hùng · 0985 535 633",
+            "text-2": "Nội dung · Gói dịch vụ, giá và ưu đãi được xác nhận khi tư vấn.",
+            "text-3": "Nhãn liên kết · Đăng ký tư vấn ↗",
+            "text-4": "Nhãn liên kết · Website sản phẩm ↗"
+          }
+        }
+      }
+    },
+    "san-pham-tendoo": {
+      "title": "Tendoo",
+      "sections": {
+        "header": {
+          "label": "Menu",
+          "fields": {
+            "text-1": "Nội dung · Viettel Đồng Nai",
+            "text-2": "Nhãn liên kết · Tư vấn · 0985 535 633"
+          }
+        },
+        "general": {
+          "label": "Thông tin chung",
+          "fields": {
+            "text-1": "Nhãn liên kết · ← Tất cả giải pháp"
+          }
+        },
+        "layout": {
+          "label": "Giới thiệu dịch vụ",
+          "fields": {
+            "text-1": "Nội dung · Quản lý bán hàng",
+            "text-2": "Tiêu đề · Tendoo",
+            "text-3": "Nội dung · Tập trung hoạt động bán hàng, hàng hóa và thông tin kin",
+            "text-4": "Nội dung · Theo dõi hoạt động bán hàng",
+            "text-5": "Nội dung · Quản lý hàng hóa, tồn kho",
+            "text-6": "Nội dung · Trao đổi phương án phù hợp với cửa hàng",
+            "text-7": "Nội dung · Lê Ngọc Hùng · Viettel Đồng Nai",
+            "text-8": "Nội dung · Liên hệ để được tư vấn gói dịch vụ, chi phí và cách tri",
+            "text-9": "Nhãn liên kết · Liên hệ Hùng",
+            "text-10": "Nhãn liên kết · Đăng ký tư vấn"
+          }
+        },
+        "pricing": {
+          "label": "Bảng giá",
+          "fields": {
+            "text-1": "Tiêu đề · Bảng giá tham khảo",
+            "text-2": "Nội dung · Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí",
+            "text-3": "Nội dung · Gói Tendoo (10)",
+            "text-4": "Nội dung · Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền (9)"
+          }
+        },
+        "footer": {
+          "label": "Chân trang",
+          "fields": {
+            "text-1": "Nhãn liên kết · Tham khảo website chính thức của Viettel"
+          }
+        }
+      }
+    },
+    "san-pham-ca": {
+      "title": "Chữ ký số",
+      "sections": {
+        "header": {
+          "label": "Menu",
+          "fields": {
+            "text-1": "Nội dung · Viettel Đồng Nai",
+            "text-2": "Nhãn liên kết · Tư vấn · 0985 535 633"
+          }
+        },
+        "general": {
+          "label": "Thông tin chung",
+          "fields": {
+            "text-1": "Nhãn liên kết · ← Tất cả giải pháp"
+          }
+        },
+        "layout": {
+          "label": "Giới thiệu dịch vụ",
+          "fields": {
+            "text-1": "Nội dung · Viettel-CA",
+            "text-2": "Tiêu đề · Chữ ký số",
+            "text-3": "Nội dung · Giải pháp ký số tài liệu và giao dịch điện tử theo nhu ",
+            "text-4": "Nội dung · Ký số hồ sơ, tài liệu điện tử",
+            "text-5": "Nội dung · Tư vấn hình thức ký phù hợp",
+            "text-6": "Nội dung · Hướng dẫn cài đặt và sử dụng",
+            "text-7": "Nội dung · Lê Ngọc Hùng · Viettel Đồng Nai",
+            "text-8": "Nội dung · Liên hệ để được tư vấn gói dịch vụ, chi phí và cách tri",
+            "text-9": "Nhãn liên kết · Liên hệ Hùng",
+            "text-10": "Nhãn liên kết · Đăng ký tư vấn"
+          }
+        },
+        "pricing": {
+          "label": "Bảng giá",
+          "fields": {
+            "text-1": "Tiêu đề · Bảng giá tham khảo",
+            "text-2": "Nội dung · Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí",
+            "text-3": "Nội dung · Cấp mới USB Token cho tổ chức (3)",
+            "text-4": "Nội dung · Gia hạn chữ ký số cho tổ chức (3)"
+          }
+        },
+        "footer": {
+          "label": "Chân trang",
+          "fields": {
+            "text-1": "Nhãn liên kết · Tham khảo website chính thức của Viettel"
+          }
+        }
+      }
+    },
+    "san-pham-contract": {
+      "title": "Hợp đồng điện tử",
+      "sections": {
+        "header": {
+          "label": "Menu",
+          "fields": {
+            "text-1": "Nội dung · Viettel Đồng Nai",
+            "text-2": "Nhãn liên kết · Tư vấn · 0985 535 633"
+          }
+        },
+        "general": {
+          "label": "Thông tin chung",
+          "fields": {
+            "text-1": "Nhãn liên kết · ← Tất cả giải pháp"
+          }
+        },
+        "layout": {
+          "label": "Giới thiệu dịch vụ",
+          "fields": {
+            "text-1": "Nội dung · vContract",
+            "text-2": "Tiêu đề · Hợp đồng điện tử",
+            "text-3": "Nội dung · Hỗ trợ gửi, ký kết và quản lý hợp đồng trên môi trường ",
+            "text-4": "Nội dung · Ký kết trên môi trường điện tử",
+            "text-5": "Nội dung · Kết nối công việc với đối tác",
+            "text-6": "Nội dung · Quản lý và tra cứu hợp đồng",
+            "text-7": "Nội dung · Lê Ngọc Hùng · Viettel Đồng Nai",
+            "text-8": "Nội dung · Liên hệ để được tư vấn gói dịch vụ, chi phí và cách tri",
+            "text-9": "Nhãn liên kết · Liên hệ Hùng",
+            "text-10": "Nhãn liên kết · Đăng ký tư vấn"
+          }
+        },
+        "pricing": {
+          "label": "Bảng giá",
+          "fields": {
+            "text-1": "Tiêu đề · Bảng giá tham khảo",
+            "text-2": "Nội dung · Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí",
+            "text-3": "Nội dung · Phí khởi tạo gói chứng thực: 1.000.000 ₫. Gói thử: 0 ₫ ",
+            "text-4": "Nội dung · Hợp đồng kèm chứng thực (6)",
+            "text-5": "Nội dung · Dùng thử (1)"
+          }
+        },
+        "footer": {
+          "label": "Chân trang",
+          "fields": {
+            "text-1": "Nhãn liên kết · Tham khảo website chính thức của Viettel"
+          }
+        }
+      }
+    },
+    "san-pham-invoice": {
+      "title": "Hóa đơn điện tử",
+      "sections": {
+        "header": {
+          "label": "Menu",
+          "fields": {
+            "text-1": "Nội dung · Viettel Đồng Nai",
+            "text-2": "Nhãn liên kết · Tư vấn · 0985 535 633"
+          }
+        },
+        "general": {
+          "label": "Thông tin chung",
+          "fields": {
+            "text-1": "Nhãn liên kết · ← Tất cả giải pháp"
+          }
+        },
+        "layout": {
+          "label": "Giới thiệu dịch vụ",
+          "fields": {
+            "text-1": "Nội dung · S-invoice",
+            "text-2": "Tiêu đề · Hóa đơn điện tử",
+            "text-3": "Nội dung · Hỗ trợ lập, gửi và quản lý hóa đơn điện tử trong quy tr",
+            "text-4": "Nội dung · Lập và quản lý hóa đơn",
+            "text-5": "Nội dung · Theo dõi thông tin hóa đơn",
+            "text-6": "Nội dung · Hướng dẫn sử dụng theo nhu cầu",
+            "text-7": "Nội dung · Lê Ngọc Hùng · Viettel Đồng Nai",
+            "text-8": "Nội dung · Liên hệ để được tư vấn gói dịch vụ, chi phí và cách tri",
+            "text-9": "Nhãn liên kết · Liên hệ Hùng",
+            "text-10": "Nhãn liên kết · Đăng ký tư vấn"
+          }
+        },
+        "pricing": {
+          "label": "Bảng giá",
+          "fields": {
+            "text-1": "Tiêu đề · Bảng giá tham khảo",
+            "text-2": "Nội dung · Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí",
+            "text-3": "Nội dung · Hóa đơn đơn lẻ (6)",
+            "text-4": "Nội dung · Combo cấp mới CA (15)",
+            "text-5": "Nội dung · Combo gia hạn CA (15)"
+          }
+        },
+        "footer": {
+          "label": "Chân trang",
+          "fields": {
+            "text-1": "Nhãn liên kết · Tham khảo website chính thức của Viettel"
+          }
+        }
+      }
+    },
+    "san-pham-bhxh": {
+      "title": "Kê khai BHXH",
+      "sections": {
+        "header": {
+          "label": "Menu",
+          "fields": {
+            "text-1": "Nội dung · Viettel Đồng Nai",
+            "text-2": "Nhãn liên kết · Tư vấn · 0985 535 633"
+          }
+        },
+        "general": {
+          "label": "Thông tin chung",
+          "fields": {
+            "text-1": "Nhãn liên kết · ← Tất cả giải pháp"
+          }
+        },
+        "layout": {
+          "label": "Giới thiệu dịch vụ",
+          "fields": {
+            "text-1": "Nội dung · vBHXH",
+            "text-2": "Tiêu đề · Kê khai BHXH",
+            "text-3": "Nội dung · Hỗ trợ doanh nghiệp lập và quản lý hồ sơ bảo hiểm xã hộ",
+            "text-4": "Nội dung · Chuẩn bị và kê khai hồ sơ điện tử",
+            "text-5": "Nội dung · Quản lý hồ sơ bảo hiểm xã hội",
+            "text-6": "Nội dung · Hỗ trợ theo phiên bản đang sử dụng",
+            "text-7": "Nội dung · Lê Ngọc Hùng · Viettel Đồng Nai",
+            "text-8": "Nội dung · Liên hệ để được tư vấn gói dịch vụ, chi phí và cách tri",
+            "text-9": "Nhãn liên kết · Liên hệ Hùng",
+            "text-10": "Nhãn liên kết · Đăng ký tư vấn"
+          }
+        },
+        "pricing": {
+          "label": "Bảng giá",
+          "fields": {
+            "text-1": "Tiêu đề · Bảng giá tham khảo",
+            "text-2": "Nội dung · Giá đã gồm VAT. Liên hệ Hùng để xác nhận gói và chi phí",
+            "text-3": "Nội dung · Cấp mới (24)",
+            "text-4": "Nội dung · Gia hạn (24)",
+            "text-5": "Nội dung · Dùng thử (1)",
+            "text-6": "Nội dung · Combo cấp mới CA + vBHXH (12)",
+            "text-7": "Nội dung · Combo gia hạn CA + vBHXH (12)"
+          }
+        },
+        "footer": {
+          "label": "Chân trang",
+          "fields": {
+            "text-1": "Nhãn liên kết · Tham khảo website chính thức của Viettel"
+          }
+        }
+      }
+    },
+    "san-pham-ftth": {
+      "title": "Internet doanh nghiệp Viettel",
+      "sections": {
+        "general": {
+          "label": "Thông tin chung",
+          "fields": {
+            "text-1": "Nhãn liên kết · ← Tất cả giải pháp"
+          }
+        },
+        "layout": {
+          "label": "Giới thiệu dịch vụ",
+          "fields": {
+            "text-1": "Nội dung · FTTH",
+            "text-2": "Tiêu đề · Internet doanh nghiệp Viettel",
+            "text-3": "Nội dung · Internet cáp quang FTTH cho văn phòng và doanh nghiệp.",
+            "text-4": "Nội dung · Cáp quang hỗ trợ Wi-Fi 6",
+            "text-5": "Nội dung · Tốc độ tải xuống và tải lên cao, hỗ trợ kết nối ổn định",
+            "text-6": "Nội dung · Phù hợp với doanh nghiệp vừa và lớn",
+            "text-7": "Nội dung · Lê Ngọc Hùng · Viettel Đồng Nai",
+            "text-8": "Nhãn liên kết · Liên hệ Hùng",
+            "text-9": "Nhãn liên kết · Đăng ký tư vấn"
+          }
+        },
+        "pricing": {
+          "label": "Bảng giá",
+          "fields": {
+            "text-1": "Tiêu đề · Bảng giá tham khảo",
+            "text-2": "Nội dung · Giá đã bao gồm VAT. Liên hệ để xác nhận cước theo địa c"
+          }
+        }
+      }
+    }
+  },
+  "groups": {
+    "tendoo": {
+      "0": "Gói Tendoo",
+      "1": "Thiết bị Tendoo · 1 năm, gồm VAT và bản quyền"
+    },
+    "ca": {
+      "0": "Cấp mới USB Token cho tổ chức",
+      "1": "Gia hạn chữ ký số cho tổ chức"
+    },
+    "contract": {
+      "0": "Hợp đồng kèm chứng thực",
+      "1": "Dùng thử"
+    },
+    "invoice": {
+      "0": "Hóa đơn đơn lẻ",
+      "1": "Combo cấp mới CA",
+      "2": "Combo gia hạn CA"
+    },
+    "bhxh": {
+      "0": "Cấp mới",
+      "1": "Gia hạn",
+      "2": "Dùng thử",
+      "3": "Combo cấp mới CA + vBHXH",
+      "4": "Combo gia hạn CA + vBHXH"
+    },
+    "ftth": {
+      "0": "IP tĩnh",
+      "1": "IP động"
+    }
+  }
+}
