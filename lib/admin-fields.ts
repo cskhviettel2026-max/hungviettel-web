@@ -8,7 +8,7 @@ export const contactFields = [
 ];
 export const visibilityFields = [field("gallery","Hiển thị banner và thư viện ảnh","check"),field("videos","Hiển thị video","check"),field("faq","Hiển thị FAQ","check")];
 export const catalogFields = [
-  field("name","Tên dịch vụ"),field("slug","Đường dẫn trang (chữ thường, nối bằng dấu -)"),field("category","Nhóm dịch vụ"),
+  field("name","Tên dịch vụ"),field("slug","Đường dẫn trang (để trống để tự tạo)"),field("category","Nhóm dịch vụ"),
   field("description","Giới thiệu ngắn","area"),field("points","Lợi ích (mỗi dòng một mục)","lines"),field("official","Link Viettel"),
   {...field("image","Ảnh dịch vụ","image"),optional:true},field("detailTitle","Tiêu đề trang chi tiết"),
   field("detailIntro","Đoạn mở đầu trang chi tiết","area"),field("detailContent","Nội dung trang chi tiết","area")

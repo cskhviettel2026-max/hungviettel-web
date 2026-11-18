@@ -55,11 +55,18 @@ export function videoSource(value: string) {
   return idPattern.test(id) ? {kind:"youtube", embed:"https://www.youtube.com/embed/" + id, url:"https://www.youtube.com/watch?v=" + id} : null;
 }
 
+function serviceSlug(value:string) {
+  return value.toLowerCase().normalize("NFD").replace(/\p{M}/gu,"").replace(/đ/g,"d")
+    .replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,90).replace(/-+$/,"");
+}
+
 const catalog = z.object({
-  ...base, name, slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(90), category: short.default(""),
+  ...base, name, slug: z.string().trim().max(500,"Đường dẫn quá dài.").default(""), category: short.default(""),
   description: long.default(""), points: lines.default([]), official: optionalUrl.default(""), image: image.default(""),
   detailTitle: short.default(""), detailIntro: long.default(""), detailContent: long.default("")
-});
+}).transform(item=>({
+  ...item, slug:serviceSlug(item.slug||item.name)||serviceSlug("dich-vu-"+item.id)
+}));
 const list = <T extends z.ZodType<{id:string}, z.ZodTypeDef, any>>(schema: T, max = 100) =>
   z.array(schema).max(max).refine(uniqueIds, "Mã mục bị trùng.");
 
@@ -75,7 +82,7 @@ export const contentSchemas = {
   faq:list(z.object({...base,q:name,a:long.min(1)})),
   blocks:list(z.object({...base,title:name,description:long,image}),50),
   pageContent:z.record(z.record(z.record(z.string().max(8000)))),
-  serviceCatalog:list(catalog).refine(items=>new Set(items.map(item=>item.slug)).size===items.length,"Đường dẫn dịch vụ bị trùng."),
+  serviceCatalog:list(catalog).refine(items=>new Set(items.map(item=>item.slug)).size===items.length,"Đường dẫn dịch vụ đã được sử dụng. Hãy nhập đường dẫn khác."),
   prices:z.object({tendoo:originals("tendoo"), ca:originals("ca"), contract:originals("contract"), invoice:originals("invoice"), bhxh:originals("bhxh"), ftth:originals("ftth")}),
   customPlans:list(plan.extend({serviceId:identifier}),400),
 };
