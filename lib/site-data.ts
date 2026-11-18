@@ -62,10 +62,6 @@ const catalog = z.object({
 });
 const list = <T extends z.ZodType<{id:string}, z.ZodTypeDef, any>>(schema: T, max = 100) =>
   z.array(schema).max(max).refine(uniqueIds, "Mã mục bị trùng.");
-export const zoomSession = z.object({
-  ...base, id:z.string().trim().min(1).max(100), title:name, startAt:z.string().datetime({offset:true}).transform(value => new Date(value).toISOString()),
-  link:optionalUrl.refine(Boolean, "Nhập link Zoom."), products:z.array(identifier).max(100)
-});
 
 export const contentSchemas = {
   contact:z.object({
@@ -82,7 +78,6 @@ export const contentSchemas = {
   serviceCatalog:list(catalog).refine(items=>new Set(items.map(item=>item.slug)).size===items.length,"Đường dẫn dịch vụ bị trùng."),
   prices:z.object({tendoo:originals("tendoo"), ca:originals("ca"), contract:originals("contract"), invoice:originals("invoice"), bhxh:originals("bhxh"), ftth:originals("ftth")}),
   customPlans:list(plan.extend({serviceId:identifier}),400),
-  zoom:list(zoomSession)
 };
 export type ContentKey = keyof typeof contentSchemas;
 export type SiteContent = {[K in ContentKey]: z.infer<(typeof contentSchemas)[K]>};

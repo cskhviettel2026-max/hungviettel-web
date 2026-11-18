@@ -18,21 +18,13 @@ export async function initialize() {
     db`CREATE TABLE IF NOT EXISTS hung_leads (
       id text PRIMARY KEY, submission_hash text, name text NOT NULL, phone text NOT NULL, email text NOT NULL,
       company text NOT NULL, note text NOT NULL DEFAULT '', products jsonb NOT NULL, quotes jsonb NOT NULL DEFAULT '[]',
-      service_ids jsonb NOT NULL, consent boolean NOT NULL, active boolean NOT NULL DEFAULT true,
+      service_ids jsonb NOT NULL, consent boolean NOT NULL,
       status text NOT NULL DEFAULT 'new' CHECK (status IN ('new','contacted','closed')),
       owner_email text NOT NULL DEFAULT 'pending', customer_email text NOT NULL DEFAULT 'pending',
       owner_email_id text, customer_email_id text, mail_claimed_at timestamptz,
       created_at timestamptz NOT NULL DEFAULT now()
     )`,
     db`CREATE INDEX IF NOT EXISTS hung_leads_created ON hung_leads (created_at DESC,id DESC)`,
-    db`CREATE INDEX IF NOT EXISTS hung_leads_zoom ON hung_leads (email,created_at DESC) WHERE consent AND active`,
-    db`CREATE TABLE IF NOT EXISTS hung_reminders (
-      session_id text NOT NULL, starts_at timestamptz NOT NULL, email text NOT NULL, status text NOT NULL,
-      attempted_at timestamptz NOT NULL DEFAULT now(), sent_at timestamptz, email_id text,
-      PRIMARY KEY(session_id,starts_at,email)
-    )`,
-    db`CREATE TABLE IF NOT EXISTS hung_legacy_zoom_imports (id text PRIMARY KEY)`,
-    db`CREATE TABLE IF NOT EXISTS hung_export_lock (id integer PRIMARY KEY, token text NOT NULL, expires_at timestamptz NOT NULL)`
   ]);
   await db.transaction(Object.entries(defaults).map(([section,data]) =>
     db`INSERT INTO hung_content (section,data) VALUES (${section}, ${JSON.stringify(data)}::jsonb) ON CONFLICT DO NOTHING`
@@ -55,5 +47,15 @@ export async function readContent() {
       data.pageContent[page][part]={...fields,...data.pageContent[page][part]};
     }
   }
+  // Adapt saved copy from the old version without overwriting unrelated edits.
+  const retired = /\b(?:tammi|zoom)\b|nhắc lịch/i;
+  const copy = data.pageContent.index, original = defaults.pageContent.index;
+  for(const [part,key] of [["register","text-9"],["register","text-20"],["done","text-3"]]) {
+    if(retired.test(copy[part][key])) copy[part][key]=original[part][key];
+  }
+  const confirmationFaq=defaults.faq.find(item=>item.id==="faq-2")!;
+  data.faq=data.faq.map(item=>item.id===confirmationFaq.id && retired.test(item.q+" "+item.a)
+    ? {...item,q:confirmationFaq.q,a:confirmationFaq.a}
+    : item);
   return {data,revisions};
 }

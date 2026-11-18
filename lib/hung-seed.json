@@ -125,8 +125,8 @@
     {
       "id": "faq-2",
       "enabled": true,
-      "q": "Tôi nhận nhóm Tammi và lịch Zoom ở đâu?",
-      "a": "Email xác nhận gửi hướng dẫn vào nhóm khi có link. Email nhắc Zoom được gửi theo lịch buổi đã cấu hình; hãy kiểm tra cả Spam và Quảng cáo."
+      "q": "Tôi nhận xác nhận đăng ký ở đâu?",
+      "a": "Sau khi gửi yêu cầu, hãy kiểm tra hộp thư đến và mục thư rác để tìm email xác nhận."
     },
     {
       "id": "faq-3",
@@ -223,7 +223,7 @@
         "text-6": "Lê Ngọc Hùng",
         "text-7": "Viettel Đồng Nai",
         "text-8": "2047 Nguyễn Ái Quốc, Phường Trấn Biên, Thành Phố Đồng Nai",
-        "text-9": "Kết nối Tammi theo số điện thoại trên.",
+        "text-9": "Gọi hotline nếu cần hỗ trợ gửi yêu cầu.",
         "text-10": "Nhận tư vấn giải pháp",
         "text-11": "Họ và tên *",
         "text-12": "Nguyễn Văn An",
@@ -234,7 +234,7 @@
         "text-17": "Đơn vị / cửa hàng",
         "text-18": "Tên đơn vị của bạn (không bắt buộc)",
         "text-19": "Bạn quan tâm giải pháp nào? *",
-        "text-20": "Tôi đồng ý để Lê Ngọc Hùng sử dụng thông tin trên để tư vấn, gửi email xác nhận và nhắc lịch đã đăng ký. Tôi có thể yêu cầu dừng nhận bất cứ lúc nào qua số 0985 535 633.",
+        "text-20": "Tôi đồng ý để Lê Ngọc Hùng sử dụng thông tin trên để tư vấn và gửi email xác nhận. Tôi có thể yêu cầu dừng nhận bất cứ lúc nào qua số 0985 535 633.",
         "text-21": "Gửi đăng ký tư vấn ↗",
         "text-22": "Thông tin chỉ được gửi khi bạn bấm đăng ký.",
         "text-23": "Đăng ký tư vấn không đồng nghĩa với mua hàng hoặc xác nhận thanh toán. Báo giá và thanh toán được trao đổi riêng."
@@ -253,7 +253,7 @@
       "done": {
         "text-1": "Chúc mừng bạn đã đăng ký!",
         "text-2": "Bộ giải pháp gồm Tendoo, chữ ký số, hợp đồng điện tử, hóa đơn điện tử và kê khai BHXH. Anh Hùng sẽ hướng dẫn theo nhu cầu bạn đã chọn.",
-        "text-3": "Hãy mở email, kiểm tra cả mục Spam/Quảng cáo để xem hướng dẫn vào nhóm Tammi. Lịch Zoom sẽ được gửi khi có lịch cụ thể.",
+        "text-3": "Bạn có thể dùng mã đăng ký khi liên hệ hotline.",
         "text-4": "Đã hiểu"
       },
       "productModal": {
@@ -2825,6 +2825,5 @@
       }
     ]
   },
-  "customPlans": [],
-  "zoom": []
+  "customPlans": []
 }

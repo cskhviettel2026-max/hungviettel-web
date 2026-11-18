@@ -1,16 +1,16 @@
-import { secureUrl, priceText, type SiteContent } from "../lib/site-data";
+import { priceText, type SiteContent } from "../lib/site-data";
 import { sql } from "./db";
 
 type Contact=SiteContent["contact"];
 type Quote={service:string;name:string;price:number|null};
 export type Lead={
-  id:string;name:string;phone:string;email:string;company:string;products:string[];quotes:Quote[];
-  service_ids:string[];active:boolean;consent:boolean;created_at:string;status:string;owner_email:string;customer_email:string
+  id:string;name:string;phone:string;email:string;company:string;note:string;products:string[];quotes:Quote[];
+  consent:boolean;created_at:string;status:string;owner_email:string;customer_email:string
 };
 type MailResult={status:"unconfigured"|"sent"|"failed";id:string|null};
-export const mailReady=()=>Boolean(process.env.RESEND_API_KEY&&process.env.RESEND_FROM_EMAIL);
+const mailReady=()=>Boolean(process.env.RESEND_API_KEY&&process.env.RESEND_FROM_EMAIL);
 
-export async function sendMail(to:string,subject:string,content:string,key:string,replyTo?:string):Promise<MailResult> {
+async function sendMail(to:string,subject:string,content:string,key:string,replyTo?:string):Promise<MailResult> {
   if(!mailReady()||!to)return {status:"unconfigured",id:null};
   try {
     const response=await fetch("https://api.resend.com/emails",{
@@ -39,14 +39,11 @@ export async function deliverLead(id:string,contact:Contact) {
     "Mã đăng ký: "+lead.id,"Giải pháp: "+lead.products.join(", "),
     ...(quotes.length?["Báo giá đã chọn: "+quotes.join("; ")]:[]),"Hotline: "+contact.hotline
   ];
-  const tammi=process.env.TAMMI_GROUP_URL ?? "";
   const ownerContent=[
     "Có yêu cầu tư vấn mới từ "+lead.name,...common,"Điện thoại: "+lead.phone,"Email: "+lead.email,"Đơn vị: "+(lead.company||"—")
   ].join("\n");
   const customerContent=[
-    "Chào "+lead.name+",","Viettel Đồng Nai đã ghi nhận yêu cầu tư vấn của anh/chị.",...common,
-    ...(secureUrl(tammi)?["Tham gia nhóm TAMMI: "+tammi]:[]),
-    "Vui lòng kiểm tra hộp thư để nhận thông tin về buổi hướng dẫn Zoom theo lịch."
+    "Chào "+lead.name+",","Viettel Đồng Nai đã ghi nhận yêu cầu tư vấn của anh/chị.",...common
   ].join("\n");
   await Promise.all([
     lead.owner_email==="pending"&&sendMail(contact.email,"Yêu cầu tư vấn mới "+id,ownerContent,"hung-owner/"+id,lead.email)

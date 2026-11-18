@@ -5,7 +5,7 @@ import { z } from "zod";
 import { contentSchemas, defaults, isPriceService, mediaImagePaths, replaceMediaImage, services, type ContentKey, type SiteContent } from "../../../lib/site-data";
 import { pageCopyDefaults } from "../../../lib/page-copy";
 import { readContent, sql } from "../../../server/db";
-import { exportLeads } from "../../../server/sheets";
+import { exportLeads, leadDateRange, readLeads } from "../../../server/leads";
 import { body, cookieName, failure, hash, HttpError, login, sameOrigin, session } from "../../../server/http";
 
 export const dynamic = "force-dynamic";
@@ -44,10 +44,12 @@ async function saveSection(section: ContentKey, revision: number, data: unknown)
 export async function GET(request: Request) {
   try {
     await requireSession();
-    const page = new URL(request.url).searchParams.get("page");
+    const filters = new URL(request.url).searchParams;
+    const page = filters.get("page");
     if (page !== null) {
       const index = validate(z.coerce.number().int().min(1).max(10000), page);
-      const rows = await sql()`SELECT * FROM hung_leads ORDER BY created_at DESC, id DESC LIMIT 31 OFFSET ${(index - 1) * 30}`;
+      const range=leadDateRange({from:filters.get("from")??undefined,to:filters.get("to")??undefined});
+      const rows=await readLeads(range,31,(index-1)*30);
       return Response.json({ rows: rows.slice(0, 30), more: rows.length > 30 });
     }
     return Response.json(await readContent());
@@ -69,7 +71,7 @@ export async function POST(request: Request) {
       (await cookies()).delete(cookieName);
       return Response.json({ ok: true });
     }
-    if (action === "export") return Response.json(await exportLeads());
+    if (action === "export") return await exportLeads(leadDateRange(await body(request,2048)));
     if (action === "image") {
       if (!process.env.BLOB_READ_WRITE_TOKEN) throw new HttpError(503, "Chưa cấu hình Vercel Blob.");
       const options = {
@@ -134,7 +136,7 @@ export async function PATCH(request: Request) {
       return Response.json({value:clean[input.key],revision:saved.revision});
     }
     if (action === "item") {
-      const input=validate(z.object({section:z.enum(["gallery","videos","faq","blocks","serviceCatalog","customPlans","prices","zoom"]),service:z.enum(services).optional(),item:z.unknown(),revision:z.number().int().min(0)}),await body(request,40000));
+      const input=validate(z.object({section:z.enum(["gallery","videos","faq","blocks","serviceCatalog","customPlans","prices"]),service:z.enum(services).optional(),item:z.unknown(),revision:z.number().int().min(0)}),await body(request,40000));
       const current=await loadSection(input.section,input.revision);
       if(input.section==="prices"&&!input.service)throw new HttpError(400,"Chọn dịch vụ.");
       const schema=input.section==="prices" ? contentSchemas.prices.shape[input.service!] : contentSchemas[input.section];
@@ -177,11 +179,10 @@ export async function PATCH(request: Request) {
       const saved = await saveSection("gallery", input.revision, clean);
       return Response.json({ item, revision: saved.revision });
     }
-    const {id,status,active}=validate(z.object({
-      id:z.string().min(1).max(150),status:z.enum(["new","contacted","closed"]).optional(),active:z.boolean().optional()
-    }).refine(input=>input.status!==undefined||input.active!==undefined),await body(request,2048));
-    const [lead]=await sql()`UPDATE hung_leads SET status=coalesce(${status??null},status),
-      active=coalesce(${active??null},active) WHERE id=${id} RETURNING id,status,active`;
+    const {id,status}=validate(z.object({
+      id:z.string().min(1).max(150),status:z.enum(["new","contacted","closed"])
+    }),await body(request,2048));
+    const [lead]=await sql()`UPDATE hung_leads SET status=${status} WHERE id=${id} RETURNING id,status`;
     if (!lead) throw new HttpError(404, "Yêu cầu không còn tồn tại.");
     return Response.json(lead);
   } catch (error) { return failure(error); }

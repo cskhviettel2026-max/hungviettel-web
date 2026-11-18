@@ -1,6 +1,6 @@
 import { groups, services, type Service } from "./site-data";
 type Option = readonly [string,string];
-export type Field = {key:string;label:string;kind?:"text"|"area"|"lines"|"number"|"check"|"select"|"image"|"date"|"products";options?:readonly Option[];optional?:boolean;nullable?:boolean};
+export type Field = {key:string;label:string;kind?:"text"|"area"|"lines"|"number"|"check"|"select"|"image";options?:readonly Option[];optional?:boolean;nullable?:boolean};
 const field=(key:string,label:string,kind?:Field["kind"]):Field=>({key,label,kind});
 export const contactFields = [
   field("name","Tên chuyên viên"),field("role","Chức danh"),field("hotline","Hotline"),field("address","Địa chỉ"),
@@ -25,5 +25,4 @@ export const listFields = {
   videos:[field("title","Tiêu đề video"),field("link","Link hoặc ID YouTube, playlist, MP4"),field("service","Dịch vụ","select")],
   faq:[field("q","Câu hỏi"),field("a","Trả lời","area")],
   blocks:[field("title","Tiêu đề"),field("description","Nội dung","area"),{...field("image","Ảnh minh họa","image"),optional:true}],
-  zoom:[field("title","Tên buổi Zoom"),field("startAt","Bắt đầu (giờ Việt Nam)","date"),field("link","Link Zoom"),field("products","Dịch vụ áp dụng (để trống nếu áp dụng tất cả)","products")]
 };

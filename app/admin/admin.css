@@ -42,3 +42,6 @@
 .vui-toast:empty { opacity:0; }
 .vui-toast.vui-toast-error { background:#fff0f4; color:#9f0024; }
 @media(max-width:740px) { .vui-layout{display:block}.vui-layout nav{flex-direction:row;overflow:auto;border-bottom:1px solid #e6dfe0}.vui-fields{grid-template-columns:1fr} }
+
+.vui-lead-filters{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px;margin-bottom:18px}
+.vui-lead-filters>.vui-field{flex:1 1 132px;max-width:210px;min-width:0}

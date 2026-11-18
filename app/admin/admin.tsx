@@ -11,16 +11,16 @@ type RecordData = Record<string, unknown>;
 type AdminData = { data: SiteContent; revisions: Record<ContentKey,number> };
 type Lead = {
   id:string; name:string; phone:string; email:string; company:string; note:string; products:string[];
-  quotes:{service:string;name:string;price:number|null}[]; status:string; owner_email:string;customer_email:string;created_at:string;active:boolean;consent:boolean;
+  quotes:{service:string;name:string;price:number|null}[]; status:string; owner_email:string;customer_email:string;created_at:string;
 };
-const tabs = { contact:"Liên hệ", media:"Ảnh & poster", prices:"Gói cước", videos:"Video", faq:"FAQ", serviceCatalog:"Dịch vụ", page:"Trang khách", zoom:"Lịch Zoom", leads:"Yêu cầu tư vấn" } as const;
+const tabs = { contact:"Liên hệ", media:"Ảnh & poster", prices:"Gói cước", videos:"Video", faq:"FAQ", serviceCatalog:"Dịch vụ", page:"Trang khách", leads:"Yêu cầu tư vấn" } as const;
 type Tab = keyof typeof tabs;
 const leadStatus: Record<string,string> = { new:"Mới", contacted:"Đã liên hệ", closed:"Đã xử lý" };
 const mailStatus: Record<string,string> = { pending:"Đang gửi",sent:"Đã gửi",failed:"Gửi lỗi",unconfigured:"Chưa cấu hình",skipped:"Không có email",legacy:"Không có dữ liệu cũ" };
 
 async function api<T>(path: string, method = "GET", data?: unknown): Promise<T> {
   const response = await fetch("/api/admin" + path, {
-    method, cache:"no-store", signal:AbortSignal.timeout(path === "?action=export" ? 50_000 : 25_000),
+    method, cache:"no-store", signal:AbortSignal.timeout(25_000),
     ...(data !== undefined ? { headers:{"Content-Type":"application/json"}, body:JSON.stringify(data) } : {})
   });
   const result = await response.json().catch(()=>({}));
@@ -38,7 +38,7 @@ function fresh(fields:Field[]):Entry {
   for (const field of fields) {
     if (field.optional && field.kind !== "image") continue;
     entry[field.key] = field.nullable ? null : field.kind === "number" ? 0 : field.kind === "check" ? false
-      : field.kind === "select" ? field.options?.[0]?.[0] : (field.kind === "lines" || field.kind === "products") ? [] : "";
+      : field.kind === "select" ? field.options?.[0]?.[0] : field.kind === "lines" ? [] : "";
   }
   return entry;
 }
@@ -109,22 +109,6 @@ function Fields({ fields, record, change, report, lock, publishField, fieldChang
       optional={field.optional} change={value=>change(field.key,value)} report={report} lock={lock}
       publish={publishField?()=>publishField(field.key):undefined} canPublish={fieldChanged?.(field.key)}/>;
     if (field.kind === "check") return <div key={field.key}><label className="vui-check"><input type="checkbox" aria-label={field.label} checked={Boolean(value)} onChange={e=>change(field.key,e.target.checked)}/>{field.label}</label>{publishField&&<button type="button" onClick={()=>publishField(field.key)} disabled={!fieldChanged?.(field.key)} aria-label={"Lưu "+field.label}>Lưu phần này</button>}</div>;
-    if (field.kind === "products") {
-      const selected = Array.isArray(value) ? value as string[] : [];
-      return <fieldset key={field.key} className="vui-field vui-wide"><legend>{field.label}</legend>
-        {field.options?.map(([id,label])=><label className="vui-check" key={id}>
-          <input type="checkbox" checked={selected.includes(id)} onChange={event=>change(field.key,
-            event.target.checked ? [...selected,id] : selected.filter(item=>item!==id))}/>{label}
-        </label>)}
-      </fieldset>;
-    }
-    if (field.kind === "date") {
-      const local = typeof value === "string" && Number.isFinite(Date.parse(value))
-        ? new Date(Date.parse(value)+7*3_600_000).toISOString().slice(0,16) : "";
-      return <label key={field.key} className="vui-field">{field.label}
-        <input type="datetime-local" value={local} onChange={event=>change(field.key,event.target.value ? event.target.value+":00+07:00" : "")}/>
-      </label>;
-    }
     const set = (input:string) => {
       if (field.kind === "lines") change(field.key,input.split("\n"));
       else if (field.kind === "number") change(field.key,input === "" ? field.nullable ? null : undefined : Number(input));
@@ -185,33 +169,62 @@ function ListEditor({ items, fields, set, report, lock, publishItem, itemChanged
 
 function Leads({ report }: { report:(text:string,error?:boolean)=>void }) {
   const [page,setPage] = useState(1), [rows,setRows] = useState<Lead[]>([]), [more,setMore] = useState(false);
-  const [exporting,setExporting]=useState(false), [sheet,setSheet]=useState("");
+  const [exporting,setExporting]=useState(false);
+  const [from,setFrom]=useState(""), [to,setTo]=useState("");
   const [loading,setLoading] = useState(true), [version,refresh] = useState(0), [saving,setSaving] = useState("");
+  const invalidRange=Boolean(from&&to&&from>to);
+  const filters=new URLSearchParams();
+  if(from)filters.set("from",from);
+  if(to)filters.set("to",to);
+  const query=filters.toString();
+
   useEffect(()=>{
+    if(invalidRange){setLoading(false);return;}
     let active=true;
     setLoading(true);
-    api<{rows:Lead[];more:boolean}>("?page="+page).then(result=>{
+    api<{rows:Lead[];more:boolean}>("?page="+page+(query?"&"+query:"")).then(result=>{
       if (active) {setRows(result.rows);setMore(result.more);}
     }).catch(error=>{if(active)report(message(error),true);}).finally(()=>{if(active)setLoading(false);});
     return ()=>{active=false;};
-  },[page,version,report]);
+  },[page,version,query,invalidRange,report]);
+
+  async function downloadExcel() {
+    setExporting(true);
+    try{
+      const response=await fetch("/api/admin?action=export",{
+        method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(Object.fromEntries(filters)),signal:AbortSignal.timeout(50_000)
+      });
+      if(!response.ok){
+        const result=await response.json().catch(()=>({}));
+        if(response.status===401)location.reload();
+        throw new Error(result.error||"Xuất file Excel thất bại.");
+      }
+      const url=URL.createObjectURL(await response.blob());
+      const link=document.createElement("a");
+      link.href=url;
+      link.download=response.headers.get("Content-Disposition")?.match(/filename="([^"]+)"/)?.[1]??"yeu-cau-tu-van.xlsx";
+      document.body.append(link);link.click();link.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),1000);
+      report("Đã tải file Excel.");
+    }catch(error){report(message(error),true);}finally{setExporting(false);}
+  }
+
   return <>
+    <div className="vui-lead-filters" role="group" aria-label="Lọc theo ngày gửi">
+      <label className="vui-field">Từ ngày<input type="date" value={from} onChange={event=>{setFrom(event.target.value);setPage(1);}}/></label>
+      <label className="vui-field">Đến ngày<input type="date" value={to} onChange={event=>{setTo(event.target.value);setPage(1);}}/></label>
+      <button type="button" className="vui-secondary" disabled={!from&&!to} onClick={()=>{setFrom("");setTo("");setPage(1);}}>Xóa lọc</button>
+      <button type="button" disabled={exporting||invalidRange} onClick={downloadExcel}>{exporting?"Đang xuất…":"Xuất Excel"}</button>
+    </div>
     <div className="vui-toolbar">
       <span>Trang {page}</span><div className="vui-actions">
-        <button type="button" className="vui-secondary" onClick={()=>setPage(page-1)} disabled={loading || page===1}>Trang trước</button>
-        <button type="button" className="vui-secondary" onClick={()=>setPage(page+1)} disabled={loading || !more}>Trang sau</button>
+        <button type="button" className="vui-secondary" onClick={()=>setPage(page-1)} disabled={loading || invalidRange || page===1}>Trang trước</button>
+        <button type="button" className="vui-secondary" onClick={()=>setPage(page+1)} disabled={loading || invalidRange || !more}>Trang sau</button>
         <button type="button" className="vui-secondary" onClick={()=>refresh(version+1)} disabled={loading}>Làm mới</button>
-        <button type="button" onClick={async()=>{
-          setExporting(true);setSheet("");
-          try {
-            const result=await api<{count:number;url:string}>("?action=export","POST",{});
-            setSheet(result.url);report("Đã xuất "+result.count+" yêu cầu sang Google Sheets.");
-          }catch(error){report(message(error),true);}finally{setExporting(false);}
-        }} disabled={exporting}>{exporting?"Đang xuất…":"Xuất Google Sheets"}</button>
-        {sheet&&<a href={sheet} target="_blank" rel="noopener">Mở Google Sheets ↗</a>}
       </div>
     </div>
-    {loading ? <p>Đang tải yêu cầu…</p> : !rows.length ? <p>Chưa có yêu cầu tư vấn.</p> : <ul className="vui-leads">{rows.map(lead=><li key={lead.id}>
+    {invalidRange ? <p role="alert">Ngày bắt đầu phải trước hoặc bằng ngày kết thúc.</p> : loading ? <p>Đang tải yêu cầu…</p> : !rows.length ? <p>{query?"Không có yêu cầu trong khoảng ngày đã chọn.":"Chưa có yêu cầu tư vấn."}</p> : <ul className="vui-leads">{rows.map(lead=><li key={lead.id}>
       <div><strong>{lead.name}</strong><p><a href={"tel:"+lead.phone}>{lead.phone}</a>{lead.email && <> · <a href={"mailto:"+lead.email}>{lead.email}</a></>}</p>
       {lead.company && <p>{lead.company}</p>}<small>Mã {lead.id}<br/>{new Date(lead.created_at).toLocaleString("vi-VN",{timeZone:"Asia/Ho_Chi_Minh"})}</small></div>
       <div><p>{lead.products.join(", ")}</p>{lead.quotes.map(quote=><p key={quote.service}>{quote.name} · {formatPrice(quote.price)}</p>)}{lead.note && <p>{lead.note}</p>}
@@ -221,18 +234,13 @@ function Leads({ report }: { report:(text:string,error?:boolean)=>void }) {
         try {await api("","PATCH",{id:lead.id,status});setRows(rows=>rows.map(item=>item.id===lead.id ? {...item,status}:item));report("Đã cập nhật trạng thái.");}
         catch(error){report(message(error),true);}finally{setSaving("");}
       }}>{Object.entries(leadStatus).map(([key,text])=><option key={key} value={key}>{text}</option>)}</select></label>
-      <label className="vui-check"><input type="checkbox" disabled={Boolean(saving)||!lead.consent} checked={lead.active&&lead.consent}
-        onChange={async event=>{
-          const active=event.target.checked;setSaving(lead.id);
-          try{await api("","PATCH",{id:lead.id,active});setRows(current=>current.map(row=>row.id===lead.id?{...row,active}:row));report("Đã cập nhật nhận nhắc Zoom.");}
-          catch(error){report(message(error),true);}finally{setSaving("");}
-        }}/>Nhận nhắc Zoom</label></div>
+      </div>
     </li>)}</ul>}
   </>;
 }
 
 type PatchResult = { revision:number;item?:Entry;items?:Entry[];value?:unknown;data?:Record<string,string> };
-type ListSection = "gallery"|"videos"|"faq"|"blocks"|"prices"|"customPlans"|"serviceCatalog"|"zoom";
+type ListSection = "gallery"|"videos"|"faq"|"blocks"|"prices"|"customPlans"|"serviceCatalog";
 
 export function Admin({ authenticated, configured }: {authenticated:boolean;configured:boolean}) {
   const [tab,setTab] = useState<Tab>("contact"), [service,setService] = useState("tendoo");
@@ -376,8 +384,7 @@ export function Admin({ authenticated, configured }: {authenticated:boolean;conf
     }else if(listSection){
       let fields=listSection==="prices"?priceFields[serviceId as Service]:listSection==="customPlans"?customPlanFields:listSection==="serviceCatalog"?catalogFields:listFields[listSection];
       const options=state.data.serviceCatalog.map(item=>[item.id,item.name] as const);
-      fields=fields.map(field=>field.key==="service"?{...field,options:[["","Nội dung chung"],...options]}:
-        field.kind==="products"?{...field,options}:field);
+      fields=fields.map(field=>field.key==="service"?{...field,options:[["","Nội dung chung"],...options]}:field);
       editor=tab==="prices"&&!chosenService?<p>Thêm dịch vụ trước khi quản lý gói cước.</p>:<ListEditor key={section+serviceId}
         items={rows(state.data,listSection)} fields={fields} set={items=>setRows(listSection,items)} report={report} lock={setUploading}
         publishItem={item=>saveItem(listSection,item)}
