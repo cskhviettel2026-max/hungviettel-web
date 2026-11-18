@@ -66,7 +66,7 @@ const list = <T extends z.ZodType<{id:string}, z.ZodTypeDef, any>>(schema: T, ma
 export const contentSchemas = {
   contact:z.object({
     name, role:short, hotline:z.string().regex(/^\+?[\d ().-]{8,24}$/).refine(value=>value.replace(/\D/g,"").length>=8,"Kiểm tra hotline."),
-    address:short, email:z.union([z.string().email().max(254),z.literal("")]), portrait:image, ticker:long
+    address:short, email:z.union([z.string().email().max(254),z.literal("")]), portrait:image, ticker:long.transform(value=>value||seed.contact.ticker).default(seed.contact.ticker)
   }),
   media:z.object({products:z.object({tendoo:image, ca:image, contract:image, invoice:image, bhxh:image, ftth:image})}),
   visibility:z.object({gallery:z.boolean(), videos:z.boolean(), faq:z.boolean()}),
@@ -83,6 +83,9 @@ export type ContentKey = keyof typeof contentSchemas;
 export type SiteContent = {[K in ContentKey]: z.infer<(typeof contentSchemas)[K]>};
 export const defaults = Object.fromEntries(Object.entries(contentSchemas).map(([key,schema]) =>
   [key,schema.parse(seed[key as ContentKey])])) as SiteContent;
+export function addressTicker(contact: Pick<SiteContent["contact"],"address"|"hotline">) {
+  return [contact.address, "Điện thoại: "+contact.hotline].filter(Boolean).join(" · ");
+}
 export type CatalogItem = SiteContent["serviceCatalog"][number];
 export type Plan = SiteContent["prices"][Service][number] | SiteContent["customPlans"][number];
 export function catalogUrl(item: CatalogItem) {

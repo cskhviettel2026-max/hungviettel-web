@@ -4,7 +4,7 @@ export type Field = {key:string;label:string;kind?:"text"|"area"|"lines"|"number
 const field=(key:string,label:string,kind?:Field["kind"]):Field=>({key,label,kind});
 export const contactFields = [
   field("name","Tên chuyên viên"),field("role","Chức danh"),field("hotline","Hotline"),field("address","Địa chỉ"),
-  {...field("email","Email nhận tư vấn"),optional:true},field("portrait","Ảnh đại diện","image"),field("ticker","Thông điệp chữ chạy","area")
+  {...field("email","Email nhận tư vấn"),optional:true},field("portrait","Ảnh đại diện","image"),field("ticker","Dòng chữ chạy giới thiệu","area")
 ];
 export const visibilityFields = [field("gallery","Hiển thị banner và thư viện ảnh","check"),field("videos","Hiển thị video","check"),field("faq","Hiển thị FAQ","check")];
 export const catalogFields = [

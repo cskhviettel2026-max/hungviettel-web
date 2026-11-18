@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { catalogFields, contactFields, customPlanFields, listFields, priceFields, visibilityFields, type Field } from "../../lib/admin-fields";
-import { isPriceService, mediaImageValue, replaceMediaImage, serviceNames, services, type ContentKey, type MediaImagePath, type Service, type SiteContent } from "../../lib/site-data";
+import { addressTicker, isPriceService, mediaImageValue, replaceMediaImage, serviceNames, services, type ContentKey, type MediaImagePath, type Service, type SiteContent } from "../../lib/site-data";
 
 import { pageCopyLabels } from "../../lib/page-copy";
 
@@ -398,10 +398,16 @@ export function Admin({ authenticated, configured }: {authenticated:boolean;conf
         canPublish={Boolean(published.current&&mediaImageValue(state.data.media,field.path)!==mediaImageValue(published.current.media,field.path))} report={report} lock={setUploading}/>)}</div>;
     }else{
       const record=state.data[section] as RecordData;
-      editor=<Fields fields={section==="contact"?contactFields:visibilityFields} record={record}
+      editor=<><Fields fields={section==="contact"?contactFields:visibilityFields} record={record}
         change={(key,value)=>change(section,{...record,[key]:value===undefined&&key==="email"?"":value})}
         report={report} lock={setUploading} publishField={saveField}
-        fieldChanged={key=>JSON.stringify(record[key])!==JSON.stringify((published.current?.[section] as RecordData)?.[key])}/>;
+        fieldChanged={key=>JSON.stringify(record[key])!==JSON.stringify((published.current?.[section] as RecordData)?.[key])}/>
+        {section==="contact" && <div className="vui-field">
+          <strong>Dòng chữ chạy địa chỉ và hotline</strong>
+          <span>{addressTicker(state.data.contact)}</span>
+          <small>Nội dung lấy từ hai ô Địa chỉ và Hotline.</small>
+        </div>}
+      </>;
     }
   }
   return <main className="vui-admin">

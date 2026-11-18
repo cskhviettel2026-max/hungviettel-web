@@ -47,6 +47,7 @@ export async function readContent() {
       data.pageContent[page][part]={...fields,...data.pageContent[page][part]};
     }
   }
+  if(!data.contact.ticker?.trim()) data.contact.ticker=defaults.contact.ticker;
   // Adapt saved copy from the old version without overwriting unrelated edits.
   const retired = /\b(?:tammi|zoom)\b|nhắc lịch/i;
   const copy = data.pageContent.index, original = defaults.pageContent.index;

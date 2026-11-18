@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { load } from "cheerio";
 import type { AnyNode } from "domhandler";
-import { catalogUrl, defaults, groups, isPriceService, plansFor, priceText, services, videoSource,
+import { addressTicker, catalogUrl, defaults, groups, isPriceService, plansFor, priceText, services, videoSource,
   type CatalogItem, type Plan, type SiteContent } from "../lib/site-data";
 import { readContent } from "./db";
 
@@ -66,8 +66,10 @@ function applyContact($:Document, info:SiteContent["contact"]) {
   $(".intro .portrait img").attr("src",info.portrait);
   const ticker=$(".address-ticker");
   if(ticker.length) {
-    if(info.address!==defaults.contact.address||info.hotline!==defaults.contact.hotline) ticker.text(info.address+" · Điện thoại: "+info.hotline);
-    if(info.ticker) ticker.append($("<span>").text(" · "+info.ticker));
+    ticker.text(addressTicker(info));
+    ticker.parent().after(
+      $("<div class='address address-message'>").append($("<span class='address-ticker'>").text(info.ticker))
+    );
   }
 }
 function absolutePaths($:Document) {
